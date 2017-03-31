@@ -23,11 +23,11 @@ dist/
 nbdist/
 .nb-gradle/
 
-#node_modules/
-#backend/target/
-#frontend/target/
-#frontend/src/main/node_modules/
-#frontend/src/main/frontend/node_modules/
-#.metadata
-#.mvn
-#frontend/src/main/frontend/node
+node_modules/
+backend/target/
+frontend/target/
+frontend/src/main/node_modules/
+frontend/src/main/frontend/node_modules/
+.metadata
+.mvn
+frontend/src/main/frontend/node
