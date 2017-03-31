@@ -1,0 +1,24 @@
+package inzynierka.lukkero.model;
+
+import java.math.BigInteger;
+
+import org.bson.types.ObjectId;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+import java.util.Date;
+
+/**
+ * Created by Łukasz Baryczka on 24.01.2017.
+ */
+@Document(collection = "Users")
+public class User {
+
+    @Id
+    public ObjectId id;
+
+    public String name;
+    public String surname;
+    public String email;
+    public Date workTime;
+}

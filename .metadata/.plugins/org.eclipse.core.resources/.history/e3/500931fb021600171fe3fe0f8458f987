@@ -1,0 +1,5 @@
+package inzynierka.lukkero.model;
+
+public class Task {
+
+}

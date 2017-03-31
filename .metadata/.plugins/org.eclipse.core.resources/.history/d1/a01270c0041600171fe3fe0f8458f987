@@ -1,0 +1,18 @@
+package inzynierka.lukkero.model;
+
+import java.math.BigInteger;
+import java.util.Date;
+
+public class Task {
+
+    public BigInteger id;
+
+    public String name;
+    public String description;
+    public Date deadline;
+    public Date essTime;
+    public Date allTime;
+    public Date dayTime;
+
+    public User user;
+}

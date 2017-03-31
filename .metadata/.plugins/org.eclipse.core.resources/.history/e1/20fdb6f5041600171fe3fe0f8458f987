@@ -1,0 +1,14 @@
+package inzynierka.lukkero.model;
+import java.math.BigInteger;
+
+public class Change {
+
+	private BigInteger id;
+
+	private User user;
+	private Project project;
+	private Task task;
+	private Boolean visible;
+	
+	
+}

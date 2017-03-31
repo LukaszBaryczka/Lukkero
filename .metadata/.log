@@ -1,0 +1,1446 @@
+!SESSION 2017-03-29 12:09:20.693 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -product org.eclipse.epp.package.jee.product -Dosgi.requiredJavaVersion=1.8 -XX:+UseG1GC -XX:+UseStringDeduplication
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product -Dosgi.requiredJavaVersion=1.8 -XX:+UseG1GC -XX:+UseStringDeduplication
+
+This is a continuation of log file /media/work/workspace/inzynierka/lukkero/.metadata/.bak_0.log
+Created Time: 2017-03-29 12:09:31.949
+!SESSION 2017-03-29 12:09:20.693 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -product org.eclipse.epp.package.jee.product -Dosgi.requiredJavaVersion=1.8 -XX:+UseG1GC -XX:+UseStringDeduplication
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product -Dosgi.requiredJavaVersion=1.8 -XX:+UseG1GC -XX:+UseStringDeduplication
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-03-29 12:09:31.949
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2017-03-29 12:09:35.706
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-03-29 12:09:35.706
+!MESSAGE A conflict occurred for ALT+CTRL+U:
+Binding(ALT+CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.occurrences.in.file.quickMenu,Show Occurrences in File Quick Menu,
+		Shows the Occurrences in File quick menu,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6f647464,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,gtk,system)
+Binding(ALT+CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.UpdateCommand,Update,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@12504d49,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-03-29 12:09:35.706
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@f8dfcbe,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4be171d1,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.385
+!MESSAGE module.js:96
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.386
+!MESSAGE     throw e;
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.386
+!MESSAGE     ^
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.386
+!MESSAGE 
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.386
+!MESSAGE SyntaxError: Error parsing /media/work/workspace/inzynierka/lukkero/frontend/src/main/frontend/node/node_modules/npm/node_modules/semver/package.json: Unexpected token ] in JSON at position 1899
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.387
+!MESSAGE     at Object.parse (native)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.387
+!MESSAGE     at readPackage (module.js:92:52)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.387
+!MESSAGE     at tryPackage (module.js:102:13)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.388
+!MESSAGE     at Function.Module._findPath (module.js:186:20)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.388
+!MESSAGE     at Function.Module._resolveFilename (module.js:467:25)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.388
+!MESSAGE     at Function.Module._load (module.js:417:25)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.388
+!MESSAGE     at Module.require (module.js:497:17)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.388
+!MESSAGE     at require (internal/module.js:20:19)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.389
+!MESSAGE     at Object.<anonymous> (/media/work/workspace/inzynierka/lukkero/frontend/src/main/frontend/node/node_modules/npm/lib/utils/unsupported.js:2:14)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.389
+!MESSAGE     at Module._compile (module.js:570:32)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.443
+!MESSAGE module.js:96
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.445
+!MESSAGE     throw e;
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.445
+!MESSAGE     ^
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.445
+!MESSAGE 
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.446
+!MESSAGE SyntaxError: Error parsing /media/work/workspace/inzynierka/lukkero/frontend/src/main/frontend/node/node_modules/npm/node_modules/semver/package.json: Unexpected token ] in JSON at position 1899
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.446
+!MESSAGE     at Object.parse (native)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.446
+!MESSAGE     at readPackage (module.js:92:52)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.446
+!MESSAGE     at tryPackage (module.js:102:13)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.447
+!MESSAGE     at Function.Module._findPath (module.js:186:20)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.447
+!MESSAGE     at Function.Module._resolveFilename (module.js:467:25)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.447
+!MESSAGE     at Function.Module._load (module.js:417:25)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.447
+!MESSAGE     at Module.require (module.js:497:17)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.447
+!MESSAGE     at require (internal/module.js:20:19)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.447
+!MESSAGE     at Object.<anonymous> (/media/work/workspace/inzynierka/lukkero/frontend/src/main/frontend/node/node_modules/npm/lib/utils/unsupported.js:2:14)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-29 12:09:37.448
+!MESSAGE     at Module._compile (module.js:570:32)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-29 12:09:41.931
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 297
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 297
+	at Object.parse(native)
+	at ReflectorHost.CompilerHost.readMetadata(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler-cli/src/compiler_host.js:189:44)
+	at ReflectorHost.CompilerHost.getMetadataFor(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler-cli/src/compiler_host.js:168:29)
+	at StaticSymbolResolver.getModuleMetadata(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:233:45)
+	at StaticSymbolResolver._createSymbolsOf(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:111:29)
+	at StaticSymbolResolver.getSymbolsOf(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:96:14)
+	at <static>.<anonymous>(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/compiler.js:285:30)
+	at Array.forEach(native)
+	at Object.extractProgramSymbols(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/compiler.js:284:79)
+	at TypeScriptServiceHost.ensureAnalyzedModules(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:197:45)
+	at TypeScriptServiceHost.updateAnalyzedModules(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:370:18)
+	at TypeScriptServiceHost.updateProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:118:18)
+	at LanguageServicePlugin.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/ts_plugin.js:31:14)
+	at Angular2Validator.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/angular2/angular2Endpoint.js:89:14)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:325)
+	at com.genuitec.eclipse.typescript.TypeScriptBuilder.build(TypeScriptBuilder.java:281)
+	at com.genuitec.eclipse.typescript.TypeScriptBuilder.build(TypeScriptBuilder.java:243)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 12:18:09.492
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 12:18:09.492
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 12:18:09.534
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-29 12:18:09.535
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+!SESSION 2017-03-31 09:47:27.362 -----------------------------------------------
+eclipse.buildId=4.6.2.M20161124-1400
+java.version=1.8.0_111
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=pl_PL
+Framework arguments:  -product org.eclipse.epp.package.jee.product -Dosgi.requiredJavaVersion=1.8 -XX:+UseG1GC -XX:+UseStringDeduplication
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -product org.eclipse.epp.package.jee.product -Dosgi.requiredJavaVersion=1.8 -XX:+UseG1GC -XX:+UseStringDeduplication
+
+!ENTRY org.eclipse.jface 2 0 2017-03-31 09:47:37.369
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-03-31 09:47:37.369
+!MESSAGE A conflict occurred for ALT+CTRL+T:
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.tm.terminal.connector.local.command.launch,Open Local Terminal on Selection,
+		,
+		Category(org.eclipse.tm.terminal.view.ui.commands.category,Terminal Commands,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7597ae32,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.EditPropertiesCommand,Show Properties,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@615f61ec,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-03-31 09:47:37.369
+!MESSAGE A conflict occurred for ALT+CTRL+U:
+Binding(ALT+CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.occurrences.in.file.quickMenu,Show Occurrences in File Quick Menu,
+		Shows the Occurrences in File quick menu,
+		Category(org.eclipse.search.ui.category.search,Search,Search command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3c5de17c,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,gtk,system)
+Binding(ALT+CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.team.svn.ui.command.UpdateCommand,Update,
+		,
+		Category(org.eclipse.team.svn.ui.command.category,SVN,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@31620971,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-03-31 09:47:51.522
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.LinkageError: loader constraint violation: when resolving method "com.genuitec.eclipse.webicons.styled.JSONStyledBlock.<init>(Lorg/json/simple/JSONObject;)V" the class loader (instance of org/eclipse/osgi/internal/loader/EquinoxClassLoader) of the current class, com/genuitec/eclipse/webclipse/evergreen/internal/ui/DialogBlocksFactory, and the class loader (instance of org/eclipse/osgi/internal/loader/EquinoxClassLoader) for the method's defining class, com/genuitec/eclipse/webicons/styled/JSONStyledBlock, have different Class objects for the type org/json/simple/JSONObject used in the signature
+	at com.genuitec.eclipse.webclipse.evergreen.internal.ui.DialogBlocksFactory.getVisibleBlocks(DialogBlocksFactory.java:35)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.ui.ReleaseNotesDialog.showReleaseNotes(ReleaseNotesDialog.java:59)
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenManager.processNewManifest(EvergreenManager.java:45)
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenManager.<init>(EvergreenManager.java:38)
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenManager.<clinit>(EvergreenManager.java:20)
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenStartup.earlyStartup(EvergreenStartup.java:13)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui 4 0 2017-03-31 09:47:51.619
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'com.genuitec.eclipse.webclipse.evergreen' plug-in.
+!STACK 0
+java.lang.LinkageError: loader constraint violation: when resolving method "com.genuitec.eclipse.webicons.styled.JSONStyledBlock.<init>(Lorg/json/simple/JSONObject;)V" the class loader (instance of org/eclipse/osgi/internal/loader/EquinoxClassLoader) of the current class, com/genuitec/eclipse/webclipse/evergreen/internal/ui/DialogBlocksFactory, and the class loader (instance of org/eclipse/osgi/internal/loader/EquinoxClassLoader) for the method's defining class, com/genuitec/eclipse/webicons/styled/JSONStyledBlock, have different Class objects for the type org/json/simple/JSONObject used in the signature
+	at com.genuitec.eclipse.webclipse.evergreen.internal.ui.DialogBlocksFactory.getVisibleBlocks(DialogBlocksFactory.java:35)
+	at com.genuitec.eclipse.webclipse.evergreen.internal.ui.ReleaseNotesDialog.showReleaseNotes(ReleaseNotesDialog.java:59)
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenManager.processNewManifest(EvergreenManager.java:45)
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenManager.<init>(EvergreenManager.java:38)
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenManager.<clinit>(EvergreenManager.java:20)
+	at com.genuitec.eclipse.webclipse.evergreen.EvergreenStartup.earlyStartup(EvergreenStartup.java:13)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2835)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-31 13:10:26.825
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-31 13:10:26.825
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-31 13:18:13.788
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-03-31 13:18:13.789
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.080
+!MESSAGE module.js:96
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.082
+!MESSAGE     throw e;
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.082
+!MESSAGE     ^
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.083
+!MESSAGE 
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.083
+!MESSAGE SyntaxError: Error parsing /media/work/workspace/inzynierka/lukkero/frontend/src/main/frontend/node/node_modules/npm/node_modules/semver/package.json: Unexpected token ] in JSON at position 1899
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.083
+!MESSAGE     at Object.parse (native)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.084
+!MESSAGE     at readPackage (module.js:92:52)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.084
+!MESSAGE     at tryPackage (module.js:102:13)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.084
+!MESSAGE     at Function.Module._findPath (module.js:186:20)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.084
+!MESSAGE     at Function.Module._resolveFilename (module.js:467:25)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.084
+!MESSAGE     at Function.Module._load (module.js:417:25)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.084
+!MESSAGE     at Module.require (module.js:497:17)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.085
+!MESSAGE     at require (internal/module.js:20:19)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.085
+!MESSAGE     at Object.<anonymous> (/media/work/workspace/inzynierka/lukkero/frontend/src/main/frontend/node/node_modules/npm/lib/utils/unsupported.js:2:14)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.085
+!MESSAGE     at Module._compile (module.js:570:32)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.128
+!MESSAGE module.js:96
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.129
+!MESSAGE     throw e;
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.129
+!MESSAGE     ^
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.129
+!MESSAGE 
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.129
+!MESSAGE SyntaxError: Error parsing /media/work/workspace/inzynierka/lukkero/frontend/src/main/frontend/node/node_modules/npm/node_modules/semver/package.json: Unexpected token ] in JSON at position 1899
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.131
+!MESSAGE     at Object.parse (native)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.131
+!MESSAGE     at readPackage (module.js:92:52)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.131
+!MESSAGE     at tryPackage (module.js:102:13)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.131
+!MESSAGE     at Function.Module._findPath (module.js:186:20)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.131
+!MESSAGE     at Function.Module._resolveFilename (module.js:467:25)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.132
+!MESSAGE     at Function.Module._load (module.js:417:25)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.132
+!MESSAGE     at Module.require (module.js:497:17)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.132
+!MESSAGE     at require (internal/module.js:20:19)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.132
+!MESSAGE     at Object.<anonymous> (/media/work/workspace/inzynierka/lukkero/frontend/src/main/frontend/node/node_modules/npm/lib/utils/unsupported.js:2:14)
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2017-03-31 13:18:33.132
+!MESSAGE     at Module._compile (module.js:570:32)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:18:34.973
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 297
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 297
+	at Object.parse(native)
+	at ReflectorHost.CompilerHost.readMetadata(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler-cli/src/compiler_host.js:189:44)
+	at ReflectorHost.CompilerHost.getMetadataFor(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler-cli/src/compiler_host.js:168:29)
+	at StaticSymbolResolver.getModuleMetadata(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:233:45)
+	at StaticSymbolResolver._createSymbolsOf(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:111:29)
+	at StaticSymbolResolver.getSymbolsOf(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:96:14)
+	at <static>.<anonymous>(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/compiler.js:285:30)
+	at Array.forEach(native)
+	at Object.extractProgramSymbols(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/compiler.js:284:79)
+	at TypeScriptServiceHost.ensureAnalyzedModules(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:197:45)
+	at TypeScriptServiceHost.updateAnalyzedModules(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:370:18)
+	at TypeScriptServiceHost.updateProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:118:18)
+	at LanguageServicePlugin.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/ts_plugin.js:31:14)
+	at Angular2Validator.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/angular2/angular2Endpoint.js:89:14)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:325)
+	at com.genuitec.eclipse.typescript.TypeScriptBuilder.build(TypeScriptBuilder.java:281)
+	at com.genuitec.eclipse.typescript.TypeScriptBuilder.build(TypeScriptBuilder.java:243)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:40:37.953
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 297
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 297
+	at Object.parse(native)
+	at ReflectorHost.CompilerHost.readMetadata(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler-cli/src/compiler_host.js:189:44)
+	at ReflectorHost.CompilerHost.getMetadataFor(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler-cli/src/compiler_host.js:168:29)
+	at StaticSymbolResolver.getModuleMetadata(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:233:45)
+	at StaticSymbolResolver._createSymbolsOf(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:111:29)
+	at StaticSymbolResolver.getSymbolsOf(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/static_symbol_resolver.js:96:14)
+	at <static>.<anonymous>(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/compiler.js:285:30)
+	at Array.forEach(native)
+	at Object.extractProgramSymbols(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/compiler/src/aot/compiler.js:284:79)
+	at TypeScriptServiceHost.ensureAnalyzedModules(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:197:45)
+	at TypeScriptServiceHost.updateAnalyzedModules(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:370:18)
+	at TypeScriptServiceHost.updateProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/typescript_host.js:118:18)
+	at LanguageServicePlugin.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/@angular/language-service/src/ts_plugin.js:31:14)
+	at Angular2Validator.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/angular2/angular2Endpoint.js:89:14)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:325)
+	at com.genuitec.eclipse.typescript.TypeScriptBuilder.build(TypeScriptBuilder.java:281)
+	at com.genuitec.eclipse.typescript.TypeScriptBuilder.build(TypeScriptBuilder.java:243)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:735)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:301)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:304)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:360)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:383)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:144)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.476
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1910
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1910
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.477
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1926
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1926
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.478
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1854
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1854
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.479
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1896
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1896
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.479
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1853
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1853
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.480
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2083
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2083
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.481
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2241
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2241
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.481
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1974
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1974
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.482
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2748
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2748
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.483
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1431
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1431
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.484
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2959
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2959
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.485
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 3597
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 3597
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.486
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1618
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1618
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.487
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1423
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1423
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.488
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2244
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2244
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.490
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2498
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2498
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.491
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1493
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1493
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.492
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1603
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1603
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.493
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1478
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1478
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.493
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1528
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1528
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.494
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 1597
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 1597
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.494
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2994
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2994
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.495
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 3501
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 3501
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.496
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2649
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2649
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.496
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 2800
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 2800
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+
+!ENTRY com.genuitec.eclipse.typescript 4 0 2017-03-31 13:43:36.497
+!MESSAGE SyntaxError: Unexpected token ] in JSON at position 3522
+!STACK 0
+com.genuitec.eclipse.typescript.services.internal.Bridge$BridgeException: SyntaxError: Unexpected token ] in JSON at position 3522
+	at Object.parse(native)
+	at LookupModuleScriptsProvider.gatherModuleScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:374:42)
+	at LookupModuleScriptsProvider.loadScriptsPerModule(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:357:36)
+	at LookupModuleScriptsProvider.getLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:269:14)
+	at ImportsManager.addLookupScripts(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/importsManager.js:16:68)
+	at LanguageServiceHost.getScriptFileNames(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:69:51)
+	at <static>.new HostCache(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79080:38)
+	at <static>.synchronizeHostData(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79301:29)
+	at Object.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/node_modules/typescript/lib/typescript.js:79462:13)
+	at LanguageServiceHost.getProgram(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageServiceHost.js:124:29)
+	at LanguageEndpoint.validate(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:616:28)
+	at LanguageEndpoint.performValidation(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/language/languageEndpoint.js:482:39)
+	at Main.processRequest(/home/lukasz/.p2/pool/plugins/com.genuitec.eclipse.typescript_2.1.5.201703072245/bin/bridge/main.js:60:33)
+	at <js-bridge.call>(Unknown Source)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.processRequest(Bridge.java:205)
+	at com.genuitec.eclipse.typescript.services.internal.Bridge.call(Bridge.java:154)
+	at com.genuitec.eclipse.typescript.services.language.LanguageEndpoint.performValidation(LanguageEndpoint.java:313)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.getDiagnostics(FileLanguageService.java:314)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.addAnnotations(ValidationReconcilingStrategy.java:74)
+	at com.genuitec.eclipse.typescript.text.reconciler.AbstractAnnotationReconcilingStrategy.reconcile(AbstractAnnotationReconcilingStrategy.java:83)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:69)
+	at com.genuitec.eclipse.typescript.text.reconciler.ValidationReconcilingStrategy.reconcile(ValidationReconcilingStrategy.java:59)
+	at com.genuitec.eclipse.typescript.text.FileLanguageService.reconcileValidationAnnotations(FileLanguageService.java:386)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.reconcile(Reconciler.java:169)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler.access$4(Reconciler.java:152)
+	at com.genuitec.eclipse.typescript.text.reconciler.Reconciler$1.run(Reconciler.java:144)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
