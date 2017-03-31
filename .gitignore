@@ -23,6 +23,7 @@ dist/
 nbdist/
 .nb-gradle/
 
+node_modules/
 backend/target/
 frontend/target/
 frontend/src/main/node_modules/
