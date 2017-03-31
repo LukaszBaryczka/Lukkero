@@ -3,7 +3,7 @@
 	"project": {
 		"name": "lukkero"
 	},
-	"apps": {
+	"apps": [{
 		"root": "src",
 		"outDir": "../../../target/frontend",
 		"assets": [
@@ -32,7 +32,7 @@
 			"config": "./protractor.conf.js"
 		}
 	},
-	"lint": {
+	"lint": [{
 		"project": "e2e/tsconfig.e2e.json"
 	}],
 	"test": {
