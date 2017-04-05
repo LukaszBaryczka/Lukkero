@@ -30,6 +30,7 @@ frontend/src/main/node_modules/
 frontend/src/main/frontend/node_modules/
 .metadata
 .mvn
+.recommenders
 frontend/src/main/frontend/node
 mvnw
 mvnw.cmd
