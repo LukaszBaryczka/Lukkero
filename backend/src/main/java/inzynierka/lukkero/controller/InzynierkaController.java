@@ -3,7 +3,7 @@ package inzynierka.lukkero.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-import inzynierka.lukkero.model.User;
+import inzynierka.lukkero.model.Customer;
 
 import javax.servlet.http.HttpServletRequest;
 import java.math.BigInteger;
@@ -14,7 +14,7 @@ import java.util.List;
 @RequestMapping(value = "/inz/lukas")
 public class InzynierkaController {
 
-    List<User> users;
+    List<Customer> users;
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String get() {
@@ -28,18 +28,18 @@ public class InzynierkaController {
 
     @RequestMapping(value = "/user", params = {"id"}, method = RequestMethod.GET)
     public @ResponseBody
-    User getUser(@RequestParam(value = "id") int id) {
+    Customer getUser(@RequestParam(value = "id") int id) {
 
         users = new ArrayList<>();
 
-        User user = new User();
+        Customer user = new Customer();
         user.setEmail("l.baryczka@gmail.com");
         user.setName("Lukasz");
         user.setSurname("Baryczka");
 
         users.add(user);
 
-        User user2 = new User();
+        Customer user2 = new Customer();
         user2.setEmail("l.baryczka@gmail.com2");
         user2.setName("Lukasz2");
         user2.setSurname("Baryczka2");
@@ -47,28 +47,28 @@ public class InzynierkaController {
 
         users.add(user2);
 
-        for(User u : users) {
+        for(Customer u : users) {
             if(u.getId().equals(BigInteger.valueOf(id))) {
                 return u;
             }
         }
 
-        return new User();
+        return new Customer();
     }
 
     @RequestMapping(value = "/users", method = RequestMethod.GET)
-    public List<User> getUsers() {
+    public List<Customer> getUsers() {
 
         users = new ArrayList<>();
 
-        User user = new User();
+        Customer user = new Customer();
         user.setEmail("l.baryczka@gmail.com");
         user.setName("Lukasz");
         user.setSurname("Baryczka");
 
         users.add(user);
 
-        User user2 = new User();
+        Customer user2 = new Customer();
         user2.setEmail("l.baryczka@gmail.com2");
         user2.setName("Lukasz2");
         user2.setSurname("Baryczka2");
@@ -86,7 +86,7 @@ public class InzynierkaController {
                                              @RequestParam(value="email", required=false) String email){
         String response;
         try{
-            User u = new User();
+            Customer u = new Customer();
             u.setEmail(email);
             u.setName(name);
             u.setSurname(surname);

@@ -1,21 +1,44 @@
 package inzynierka.lukkero.model;
 
+import javax.persistence.*;
+import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Date;
 
-public class Task {
+@Entity
+@Table(name = "task")
+public class Task implements Serializable {
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.AUTO)
 	private BigInteger id;
 
+	@Column(name = "name")
 	private String name;
+	@Column(name = "description")
 	private String description;
+	@Column(name = "deadline")
 	private Date deadline;
-    private Date essTime;
-    private Date allTime;
-    private Date dayTime;
+	@Column(name = "essTime")
+	private Date essTime;
+	@Column(name = "allTime")
+	private Date allTime;
+	@Column(name = "dayTime")
+	private Date dayTime;
+	@Column(name = "customer")
+    private Customer customer;
 
-    private User user;
-    
+	public Task() {}
+
+	public Task(String name, String description, Date deadline, Date essTime, Date allTime, Date dayTime, Customer customer) {
+		this.name = name;
+		this.description = description;
+		this.deadline = deadline;
+		this.essTime = essTime;
+		this.allTime = allTime;
+		this.dayTime = dayTime;
+		this.customer = customer;
+	}
 
 	public BigInteger getId() {
 		return id;
@@ -73,11 +96,25 @@ public class Task {
 		this.dayTime = dayTime;
 	}
 
-	public User getUser() {
-		return user;
+	public Customer getCustomer() {
+		return customer;
 	}
 
-	public void setUser(User user) {
-		this.user = user;
+	public void setCustomer(Customer user) {
+		this.customer = user;
+	}
+
+	@Override
+	public String toString() {
+		return "Task{" +
+				"id=" + id +
+				", name='" + name + '\'' +
+				", description='" + description + '\'' +
+				", deadline=" + deadline +
+				", essTime=" + essTime +
+				", allTime=" + allTime +
+				", dayTime=" + dayTime +
+				", customer=" + customer +
+				'}';
 	}
 }
