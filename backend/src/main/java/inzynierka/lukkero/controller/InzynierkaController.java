@@ -10,7 +10,7 @@ import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping(value = "/inz/lukas")
 public class InzynierkaController {
 
@@ -95,5 +95,10 @@ public class InzynierkaController {
             response = "Fail";
         }
         return response;
+    }
+
+    @RequestMapping(value="/number", method = RequestMethod.GET)
+    public String liczba() {
+        return "7";
     }
 }
