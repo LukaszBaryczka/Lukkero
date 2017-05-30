@@ -1,0 +1,19 @@
+#Powiadomienie {
+  display:inline-block;
+  width: 150px;
+  height: 93%;
+  white-space: normal;
+  background-color: #cccc99;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 0.4%;
+}
+
+#fromPowiadomienie {
+
+}
+
+#contentPowiadomienie {
+  height: 50%;
+}

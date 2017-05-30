@@ -1,0 +1,43 @@
+#firstColumn {
+  width: 80%;
+  float: left;
+  height: 100%;
+  background: #666633;
+}
+
+#topLine {
+  height: 7%;
+}
+
+#midLine {
+  height: 63%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#bottomLine {
+  bottom: 0;
+  height: 30%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+#secondColumn {
+  width: 20%;
+  float: right;
+  height: 100%;
+  background: #666633;
+}
+
+#userLine {
+  height: 30%;
+}
+
+#changesLine {
+  bottom: 0;
+  height: 70%;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
