@@ -1,44 +1,24 @@
 import { Component, OnInit } from '@angular/core';
+import { Project } from '../../dictionary/Project';
+import {ProjectListService} from "./project-list.service";
 
 @Component({
   selector: 'app-project-list',
   templateUrl: './project-list.component.html',
-  styleUrls: ['./project-list.component.css']
+  styleUrls: ['./project-list.component.css'],
+  providers: [ProjectListService]
 })
-export class ProjectListComponent {
+export class ProjectListComponent implements OnInit {
 
-  projekty: Array<Project> = [
-    {
-      nazwa:'pierwszy',
-      czas:1,
-      opis:'opis 1'
-    },
-    {
-      nazwa:'drugi',
-      czas:1,
-      opis:'opis 2'
-    },
-    {
-      nazwa:'trzeci',
-      czas:1,
-      opis:'opis 3'
-    },
-    {
-      nazwa:'czwarty',
-      czas:1,
-      opis:'opis 4'
-    },
-    {
-      nazwa:'piąty',
-      czas:1,
-      opis:'opis 5'
-    }
-  ]
+  ngOnInit() {}
 
-}
+  projekty: Array<Project>;
+  errorMessage: string;
 
-export interface Project {
-  nazwa:string;
-  czas:number;
-  opis:string;
+  constructor(private service:ProjectListService) {
+    this.service.getProjectList().subscribe(
+      data => this.projekty = data,
+      error => this.errorMessage = <any>error
+    );
+  }
 }

@@ -1,1 +1,11 @@
-task-list works!
+<div [routerLink]="['/task', task.taskId]" id="Task" *ngFor="let task of tasks">
+  <div id="nazwaTaska">
+    Nazwa zadania: {{task.name}}
+  </div>
+  <div id="opisTaska">
+    Opis: {{task.description}}
+  </div>
+  <div id="czasTaska">
+    Czas realizacji: {{task.essTime}}
+  </div>
+</div>

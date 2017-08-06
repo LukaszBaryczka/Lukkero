@@ -1,11 +1,11 @@
 <div id="Changes" *ngFor="let changes of changeList">
   <div id="whoChanges">
-    Kto: {{changes.who}}
+    Kto: {{changes.customer.name}}  {{changes.customer.surname}}
   </div>
   <div id="whereChanges">
-    Gdzie: {{changes.where}}
+    Gdzie: {{changes.project.name}}
   </div>
   <div id="whatChanges">
-    Co: {{changes.what}}
+    Co: {{changes.task.name}}
   </div>
 </div>

@@ -1,18 +1,26 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
+import { Http, Headers } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/map';
 import { AppConfig } from '../../../src/config';
+import { AuthenticationService } from '../login/authentication.service'
 
 @Injectable()
 export class NotificationsService {
 
-  constructor(private http: Http) { }
+  constructor(private http: Http, private authenticationService: AuthenticationService) { }
 
-  fetchData() {
-    return this.http.get(AppConfig.API_BASE_URL + AppConfig.API_TEST_URL).map(response => response.json())
+  private headers = new Headers({
+    'Content-Type': 'application/json',
+    'Authorization': 'Bearer ' + this.authenticationService.getToken()
+  });
+
+  getNotifications() {
+    return this.http.get(AppConfig.API_BASE_URL
+      + AppConfig.API_NOTIFICATIONS_URL, {headers: this.headers})
+      .map(response => response.json())
       .catch(this.handleError);
   }
   private handleError (error: Response | any) {

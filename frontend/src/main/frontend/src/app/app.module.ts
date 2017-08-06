@@ -13,6 +13,10 @@ import { NotificationsComponent } from './notifications/notifications.component'
 import { UserComponent } from './user/user.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { LogoComponent } from './logo/logo.component';
+import { routes } from './app.router';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component'
+import {AuthenticationService} from "./login/authentication.service";
 
 @NgModule({
   declarations: [
@@ -25,14 +29,17 @@ import { LogoComponent } from './logo/logo.component';
     NotificationsComponent,
     UserComponent,
     ProjectListComponent,
-    LogoComponent
+    LogoComponent,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routes
   ],
-  providers: [],
+  providers: [ AuthenticationService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

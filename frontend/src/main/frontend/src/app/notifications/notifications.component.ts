@@ -1,50 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+import { Notification } from  '../../dictionary/Notification'
+import {NotificationsService} from "./notifications.service";
 
 @Component({
   selector: 'app-notifications',
   templateUrl: './notifications.component.html',
-  styleUrls: ['./notifications.component.css']
+  styleUrls: ['./notifications.component.css'],
+  providers: [NotificationsService]
 })
-export class NotificationsComponent {
+export class NotificationsComponent implements OnInit{
 
-  notificationList: Array<Notification> = [
-    {
-      from: 'Lukas',
-      content: 'pierwsze powiadomienie'
-    },
-    {
-      from: 'Lukas',
-      content: 'pierwsze powiadomienie'
-    },
-    {
-      from: 'Lukas',
-      content: 'pierwsze powiadomienie'
-    },
-    {
-      from: 'Lukas',
-      content: 'pierwsze powiadomienie'
-    },
-    {
-      from: 'Lukas',
-      content: 'pierwsze powiadomienie'
-    },
-    {
-      from: 'Lukas',
-      content: 'pierwsze powiadomienie'
-    },
-    {
-      from: 'Lukas',
-      content: 'pierwsze powiadomienie'
-    },
-    {
-      from: 'Lukas',
-      content: 'pierwsze powiadomienie'
-    }
-  ]
+  notificationList: Array<Notification>;
+  errorMessage: string;
 
+  constructor(private service:NotificationsService) {  }
+
+  ngOnInit() {
+    this.getNotification();
 }
 
-export interface Notification {
-  from:string;
-  content:string
+  getNotification() {
+    this.service.getNotifications().subscribe(
+      data => this.notificationList = data,
+      error => this.errorMessage = <any>error
+    );
+  }
 }

@@ -1,15 +1,41 @@
 import { Component, OnInit } from '@angular/core';
+import {ProjectService} from "./project.service";
+import {Project} from "../../dictionary/Project";
+import {ActivatedRoute} from "@angular/router";
 
 @Component({
   selector: 'app-project',
   templateUrl: './project.component.html',
-  styleUrls: ['./project.component.css']
+  styleUrls: ['./project.component.css'],
+  providers: [ProjectService]
 })
 export class ProjectComponent implements OnInit {
 
-  constructor() { }
+  projectId;
+  project: Project;
+  errorMessage: string;
 
-  ngOnInit() {
+  constructor(private service:ProjectService, private route: ActivatedRoute) {
+    this.project = new Project();
   }
 
+  ngOnInit() {
+    this.getData();
+    this.getProject(this.projectId);
+  }
+
+  getProject(taskId) {
+    this.service.getProject(taskId).subscribe(
+      data => {this.project = data,
+        console.log("Sprawdzam " + JSON.stringify(data)),
+        console.log("Sprawdzam2 " + this.project.name)},
+      error => this.errorMessage = <any>error
+    );
+  }
+
+  getData() {
+    let params: any = this.route.snapshot.params;
+    this.projectId = params.projectId;
+    console.log("ProjectComponent Id project: " + this.projectId);
+  }
 }

@@ -12,10 +12,10 @@ export class DataService {
 
   constructor(private http: Http) { }
 
-  fetchData() {
-    return this.http.get(AppConfig.API_BASE_URL + AppConfig.API_TEST_URL).map(response => response.json())
-      .catch(this.handleError);
-  }
+  // fetchData() {
+  //   return this.http.get(AppConfig.API_BASE_URL + AppConfig.API_TEST_URL).map(response => response.json())
+  //     .catch(this.handleError);
+  // }
   private handleError (error: Response | any) {
     // In a real world app, you might use a remote logging infrastructure
     let errMsg: string;

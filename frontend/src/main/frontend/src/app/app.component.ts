@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import { DataService } from './data.service'
+import { DataService } from './data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,20 +7,11 @@ import { DataService } from './data.service'
   styleUrls: ['./app.component.css'],
   providers: [DataService]
 })
+
 export class AppComponent implements OnInit {
-  title = 'Hello World';
-  mojaZmienna = 'Liczba';
-  liczba;
-  errorMessage: string;
 
   constructor(private dataService: DataService) {}
 
-  ngOnInit() { this.getData(); }
+  ngOnInit() { }
 
-  getData() {
-    this.dataService.fetchData().subscribe(
-      data => this.liczba = data,
-      error => this.errorMessage = <any>error
-    );
-  }
 }

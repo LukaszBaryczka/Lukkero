@@ -1,43 +1,79 @@
-#firstColumn {
-  width: 80%;
-  float: left;
-  height: 100%;
-  background: #666633;
+div {
+  position:relative;
+}
+a {
+  text-decoration: none;
 }
 
-#topLine {
-  height: 7%;
+#header {
+  height:181px;
+  margin-bottom:0px;
+  background-color:#0086B3 ;
+  position: relative;
 }
 
-#midLine {
-  height: 63%;
-  overflow-y: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
+#menu a {
+  display: block;
+  line-height: 20px;
+  padding: 0 8px;
+  color: #fff;
+  font-weight: bold;
+}
+#menu a:hover {
+  background: #fff;
+  color: #294b9d;
 }
 
-#bottomLine {
-  bottom: 0;
-  height: 30%;
-  overflow-y: hidden;
-  overflow-x: auto;
-  white-space: nowrap;
+#menu {
+  width: 15%;
+  min-width: 200px;
+  float:left;
+  background-color:#663366 ;
+  z-index: 1;
 }
 
-#secondColumn {
-  width: 20%;
+#notifications {
+  width: 15%;
+  min-width: 250px;
+  float:right;
+  background-color:#aaffaa ;
+}
+
+#menu dt {
+  font-size: 12px;
+  color: #000;
+  font-weight: bold;
+  height:20px;
+  padding-top:6px;
+  text-align:center;
+}
+
+#menu dd {
+  font-size:13px;
+  margin-top:3px;
+  margin-left:6px;
+}
+#menu a {
+  font-size:14px;
+  color: #000000;
+
+}
+
+#content {
+  height:auto;
+  width:auto;
+  position: relative;
+}
+
+#footer {
+  clear:both;
+  height:50px;
+  background-color:#0086B3 ;
+}
+
+#user-panel {
   float: right;
   height: 100%;
-  background: #666633;
-}
-
-#userLine {
-  height: 30%;
-}
-
-#changesLine {
-  bottom: 0;
-  height: 70%;
-  overflow-y: auto;
-  overflow-x: hidden;
+  width: 15%;
+  min-width: 250px;
 }
