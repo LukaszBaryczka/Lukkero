@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Task } from '../../dictionary/Task'
 import { ActivatedRoute } from '@angular/router'
 import {TaskService} from "./task.service";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-task',
@@ -15,7 +17,10 @@ export class TaskComponent implements OnInit {
   task: Task;
   errorMessage: string;
 
-  constructor(private service:TaskService, private route: ActivatedRoute) {
+  constructor(
+    private router: Router,
+    private service:TaskService,
+    private route: ActivatedRoute) {
     this.task = new Task();
   }
 
@@ -29,7 +34,10 @@ export class TaskComponent implements OnInit {
       data => {this.task = data,
         console.log("Sprawdzam " + JSON.stringify(data)),
         console.log("Sprawdzam2 " + this.task.name)},
-      error => this.errorMessage = <any>error
+      error => {
+        this.router.navigate(['login']);
+        this.errorMessage = <any>error
+      }
     );
   }
 

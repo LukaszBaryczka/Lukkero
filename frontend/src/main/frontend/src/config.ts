@@ -9,4 +9,5 @@ export class AppConfig {
   public static API_PROJECT_URL = '/project';
   public static API_CHANGES_URL = '/changes';
   public static API_TASK_URL = '/task';
+  public static API_AUTH_URL = '/auth';
 }

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Notification } from  '../../dictionary/Notification'
+import { Notification } from  '../../dictionary/Notification';
 import {NotificationsService} from "./notifications.service";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-notifications',
@@ -13,7 +15,9 @@ export class NotificationsComponent implements OnInit{
   notificationList: Array<Notification>;
   errorMessage: string;
 
-  constructor(private service:NotificationsService) {  }
+  constructor(
+    private router: Router,
+    private service:NotificationsService) {  }
 
   ngOnInit() {
     this.getNotification();
@@ -22,7 +26,10 @@ export class NotificationsComponent implements OnInit{
   getNotification() {
     this.service.getNotifications().subscribe(
       data => this.notificationList = data,
-      error => this.errorMessage = <any>error
+      error => {
+        this.router.navigate(['login']);
+        this.errorMessage = <any>error
+      }
     );
   }
 }

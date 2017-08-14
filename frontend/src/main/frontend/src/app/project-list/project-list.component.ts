@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../../dictionary/Project';
 import {ProjectListService} from "./project-list.service";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-project-list',
@@ -15,10 +17,15 @@ export class ProjectListComponent implements OnInit {
   projekty: Array<Project>;
   errorMessage: string;
 
-  constructor(private service:ProjectListService) {
+  constructor(
+    private router: Router,
+    private service:ProjectListService) {
     this.service.getProjectList().subscribe(
       data => this.projekty = data,
-      error => this.errorMessage = <any>error
+      error => {
+        this.router.navigate(['login']);
+        this.errorMessage = <any>error
+      }
     );
   }
 }

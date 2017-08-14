@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ChangesService } from "./changes.service";
-import { Change } from "../../dictionary/Change"
+import { Change } from "../../dictionary/Change";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-changes',
@@ -17,13 +19,17 @@ export class ChangesComponent implements OnInit{
     this.getChanges();
   }
 
-  constructor(private service:ChangesService) {
+  constructor(
+    private service:ChangesService,
+    private router: Router,) {
   }
 
   getChanges() {
     this.service.getChanges().subscribe(
       data => this.changeList = data,
-      error => this.errorMessage = <any>error
+      error => {
+        this.router.navigate(['login']);
+        this.errorMessage = <any>error}
     );
   }
 }

@@ -16,7 +16,9 @@ import { LogoComponent } from './logo/logo.component';
 import { routes } from './app.router';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component'
-import {AuthenticationService} from "./login/authentication.service";
+import { AuthenticationService } from "./login/authentication.service";
+import { CanActivateAuthGuard } from './can-activate.authguard';
+
 
 @NgModule({
   declarations: [
@@ -39,7 +41,7 @@ import {AuthenticationService} from "./login/authentication.service";
     HttpModule,
     routes
   ],
-  providers: [ AuthenticationService ],
+  providers: [ AuthenticationService, CanActivateAuthGuard ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

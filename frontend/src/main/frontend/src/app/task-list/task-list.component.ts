@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Task } from '../../dictionary/Task';
 import {TaskListService} from "./task-list.service";
-
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-task-list',
@@ -16,7 +16,10 @@ export class TaskListComponent implements OnInit {
   tasks: Array<Task>;
   errorMessage: string;
 
-  constructor(private service:TaskListService, private route: ActivatedRoute) {}
+  constructor(
+    private router: Router,
+    private service:TaskListService,
+    private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.getData();
@@ -36,14 +39,20 @@ export class TaskListComponent implements OnInit {
   getByProjectId(projectId) {
     this.service.getByProjectId(projectId).subscribe(
       data => this.tasks = data,
-      error => this.errorMessage = <any>error
+      error => {
+        this.router.navigate(['login']);
+        this.errorMessage = <any>error
+      }
     );
   }
 
   getAllByUser() {
     this.service.getAllByUser().subscribe(
       data => this.tasks = data,
-      error => this.errorMessage = <any>error
+      error => {
+        this.router.navigate(['login']);
+        this.errorMessage = <any>error
+      }
     );
   }
 

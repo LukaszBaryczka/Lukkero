@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {User} from "../../dictionary/User";
 import {MembersService} from "./members.service";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-members',
@@ -17,13 +19,17 @@ export class MembersComponent implements OnInit {
     this.getChanges();
   }
 
-  constructor(private service:MembersService) {
+  constructor(
+    private router: Router,
+    private service:MembersService) {
   }
 
   getChanges() {
     this.service.getMembers().subscribe(
       data => this.userList = data,
-      error => this.errorMessage = <any>error
+      error => {
+        this.router.navigate(['login']);
+        this.errorMessage = <any>error}
     );
   }
 

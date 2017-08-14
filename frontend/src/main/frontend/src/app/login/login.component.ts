@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { AuthenticationService } from './authentication.service';
 
 @Component({
+  selector: 'app-login',
   moduleId: module.id,
   templateUrl: 'login.component.html',
   styleUrls: ['login.component.css']
@@ -29,7 +30,8 @@ export class LoginComponent implements OnInit {
       .subscribe(result => {
         if (result === true) {
           // login successful
-          this.router.navigate(['home']);
+          this.router.navigate(['project-list']);
+          this.refresh();
         } else {
           // login failed
           this.error = 'Username or password is incorrect';
@@ -39,5 +41,9 @@ export class LoginComponent implements OnInit {
         this.loading = false;
         this.error = error;
       });
+  }
+
+  refresh(): void {
+    window.location.reload();
   }
 }

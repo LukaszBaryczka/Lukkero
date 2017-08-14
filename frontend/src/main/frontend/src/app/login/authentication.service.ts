@@ -4,10 +4,11 @@ import { Observable } from 'rxjs/Rx';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
+import { AppConfig } from '../../../src/config';
 
 @Injectable()
 export class AuthenticationService {
-  private authUrl = 'http://localhost:8080/auth';
+  private authUrl = AppConfig.API_BASE_URL+AppConfig.API_AUTH_URL
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(private http: Http) {
@@ -40,5 +41,10 @@ export class AuthenticationService {
   logout(): void {
     // clear token remove user from local storage to log user out
     localStorage.removeItem('currentUser');
+  }
+
+  isLoggedIn(): boolean {
+    var token: String = this.getToken();
+    return token && token.length > 0;
   }
 }

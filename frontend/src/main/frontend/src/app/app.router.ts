@@ -12,21 +12,22 @@ import { ChangesComponent } from './changes/changes.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
 import {LoginComponent} from "./login/login.component";
+import { CanActivateAuthGuard } from './can-activate.authguard';
 
 export const router: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'home', component: HomeComponent},
-  { path: 'user', component: UserComponent},
-  { path: 'logo', component: LogoComponent},
-  { path: 'members', component: MembersComponent},
-  { path: 'notifications', component: NotificationsComponent},
-  { path: 'project-list', component: ProjectListComponent},
-  { path: 'project-list/:projectId', component: TaskListComponent},
-  { path: 'task-list', component: TaskListComponent},
-  { path: 'task/:taskId', component: TaskComponent},
-  { path: 'project/:projectId', component: ProjectComponent},
+  { path: 'home', component: HomeComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'user', component: UserComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'logo', component: LogoComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'members', component: MembersComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'notifications', component: NotificationsComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'project-list', component: ProjectListComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'project-list/:projectId', component: TaskListComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'task-list', component: TaskListComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'task/:taskId', component: TaskComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'project/:projectId', component: ProjectComponent, canActivate: [CanActivateAuthGuard]},
   { path: 'login', component: LoginComponent},
-  { path: 'changes', component: ChangesComponent}
+  { path: 'changes', component: ChangesComponent, canActivate: [CanActivateAuthGuard]}
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

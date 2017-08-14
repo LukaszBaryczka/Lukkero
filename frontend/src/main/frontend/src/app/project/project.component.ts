@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import {ProjectService} from "./project.service";
 import {Project} from "../../dictionary/Project";
 import {ActivatedRoute} from "@angular/router";
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-project',
@@ -15,7 +17,10 @@ export class ProjectComponent implements OnInit {
   project: Project;
   errorMessage: string;
 
-  constructor(private service:ProjectService, private route: ActivatedRoute) {
+  constructor(
+    private router: Router,
+    private service:ProjectService,
+    private route: ActivatedRoute) {
     this.project = new Project();
   }
 
@@ -29,7 +34,10 @@ export class ProjectComponent implements OnInit {
       data => {this.project = data,
         console.log("Sprawdzam " + JSON.stringify(data)),
         console.log("Sprawdzam2 " + this.project.name)},
-      error => this.errorMessage = <any>error
+      error => {
+        this.router.navigate(['login']);
+        this.errorMessage = <any>error
+      }
     );
   }
 
