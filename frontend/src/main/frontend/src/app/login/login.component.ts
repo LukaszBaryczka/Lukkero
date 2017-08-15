@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { FacebookService, LoginResponse } from 'ngx-facebook';
 
 import { AuthenticationService } from './authentication.service';
 
@@ -15,35 +16,39 @@ export class LoginComponent implements OnInit {
   loading = false;
   error = '';
 
+
+
   constructor(
     private router: Router,
-    private authenticationService: AuthenticationService) { }
+    private authenticationService: AuthenticationService,
+    private fb: FacebookService) { }
 
   ngOnInit() {
     // reset login status
     this.authenticationService.logout();
   }
 
-  login() {
-    this.loading = true;
-    this.authenticationService.login(this.model.username, this.model.password)
-      .subscribe(result => {
-        if (result === true) {
-          // login successful
-          this.router.navigate(['project-list']);
-          this.refresh();
-        } else {
-          // login failed
-          this.error = 'Username or password is incorrect';
-          this.loading = false;
-        }
-      }, error => {
-        this.loading = false;
-        this.error = error;
-      });
+  loginFacebook() {
+    console.log("funkcja");
+    this.authenticationService.loginWithFacebook();
   }
 
-  refresh(): void {
-    window.location.reload();
-  }
+  // login() {
+  //   this.loading = true;
+  //   this.authenticationService.login(this.model.username, this.model.password)
+  //     .subscribe(result => {
+  //       if (result === true) {
+  //         // login successful
+  //         this.router.navigate(['project-list']);
+  //         this.refresh();
+  //       } else {
+  //         // login failed
+  //         this.error = 'Username or password is incorrect';
+  //         this.loading = false;
+  //       }
+  //     }, error => {
+  //       this.loading = false;
+  //       this.error = error;
+  //     });
+  // }
 }

@@ -18,6 +18,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component'
 import { AuthenticationService } from "./login/authentication.service";
 import { CanActivateAuthGuard } from './can-activate.authguard';
+import { FacebookModule } from 'ngx-facebook';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { CanActivateAuthGuard } from './can-activate.authguard';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routes
+    routes,
+    FacebookModule.forRoot()
   ],
   providers: [ AuthenticationService, CanActivateAuthGuard ],
   bootstrap: [AppComponent]
