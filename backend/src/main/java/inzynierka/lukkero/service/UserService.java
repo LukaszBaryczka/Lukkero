@@ -2,6 +2,9 @@ package inzynierka.lukkero.service;
 
 import inzynierka.lukkero.model.Customer;
 import inzynierka.lukkero.model.Project;
+import inzynierka.lukkero.model.security.Authority;
+import inzynierka.lukkero.model.security.AuthorityName;
+import inzynierka.lukkero.repository.AuthorityRepository;
 import inzynierka.lukkero.repository.ProjectRepository;
 import inzynierka.lukkero.repository.TaskRepository;
 import inzynierka.lukkero.repository.UserRepository;
@@ -11,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @Service ( "userService" )
@@ -23,9 +27,23 @@ public class UserService implements IService< Customer > {
     @Autowired
     UserRepository userRepository;
     
+    @Autowired
+    AuthorityRepository authorityRepository;
+    
     @Override
     public String save ( Customer customer ) {
         if ( userRepository == null ) return StringUtils.EMPTY;
+        if (customer != null &&
+                userRepository.exists ( customer.getUserId ()))
+            return StringUtils.EMPTY;
+        customer.setEnabled ( true );
+        customer.setLastPasswordResetDate ( new Date (  ) );
+        List< Authority > authorities = new ArrayList<> (  );
+        authorities.add ( authorityRepository.findByName ( AuthorityName.ROLE_USER ) );
+        customer.setAuthorities ( authorities );
+        customer.setTasks ( new ArrayList<> (  ) );
+        customer.setProjects ( new ArrayList<> (  ) );
+        customer.setWorkTime ( new Date ( 0, 0 , 0, 0, 0, 0  ));
         userRepository.save ( customer );
         return "Success";
     }

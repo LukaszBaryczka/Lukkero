@@ -7,11 +7,13 @@ import 'rxjs/add/observable/throw';
 import { AppConfig } from '../../../src/config';
 import { FacebookService, LoginResponse, InitParams } from 'ngx-facebook';
 import { Router } from '@angular/router';
+import {User} from "../../dictionary/User";
 
 
 @Injectable()
 export class AuthenticationService {
   private authUrl = AppConfig.API_BASE_URL+AppConfig.API_AUTH_URL
+  private signUpUrl = AppConfig.API_BASE_URL+AppConfig.API_SIGN_UP_URL
   private headers = new Headers({'Content-Type': 'application/json'});
 
   constructor(
@@ -33,7 +35,8 @@ export class AuthenticationService {
       { console.log('fb login')
         this.getUserDataFromFB().then(res => {
           console.log('get data from fb')
-          this.login("admin", "admin")
+          console.log(res)
+          this.login(res.email, res.id)
               .subscribe(result => {
                 if (result === true) {
                   console.log('jwt login')
@@ -47,7 +50,7 @@ export class AuthenticationService {
   }
 
   getUserDataFromFB() {
-    return this.fb.api('/me?fields=id,first_name,last_name,email,gender');
+    return this.fb.api('/me?fields=id,first_name,last_name,email');
   }
 
   login(username: string, password: string): Observable<boolean> {
@@ -66,6 +69,45 @@ export class AuthenticationService {
           return false;
         }
       }).catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+  }
+
+  signUp(user : User, username: string, password: string) : Observable<boolean> {
+    return this.http.post(this.signUpUrl, JSON.stringify(
+      {
+        userDto: user,
+        username: username,
+        password: password
+      }
+      )
+      , {headers: this.headers})
+      .map((response: Response) => {
+        return true;
+      }).catch((error:any) => Observable.throw(error.json().error || 'Server error'))
+  }
+
+  signUpWithFacebook() {
+    this.fb.login({scope:'email'})
+      .then((response: LoginResponse) =>
+      {
+        console.log('fb login')
+        this.getUserDataFromFB().then(res => {
+          var user = new User();
+          user.name = res.first_name;
+          user.surname = res.last_name;
+          user.email = res.email;
+          user.userId = res.id;
+          console.log("get UserDataFromFb")
+          console.log(res)
+          this.signUp(user, res.email, res.id)
+            .subscribe(result => {
+              if (result === true) {
+                console.log('jwt register')
+                window.location.reload();
+              }});
+        })
+        console.log(response);
+      })
+      .catch((error: any) => console.error(error));
   }
 
   getToken(): String {

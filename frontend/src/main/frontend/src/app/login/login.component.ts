@@ -29,26 +29,12 @@ export class LoginComponent implements OnInit {
   }
 
   loginFacebook() {
-    console.log("funkcja");
+    console.log("login");
     this.authenticationService.loginWithFacebook();
   }
 
-  // login() {
-  //   this.loading = true;
-  //   this.authenticationService.login(this.model.username, this.model.password)
-  //     .subscribe(result => {
-  //       if (result === true) {
-  //         // login successful
-  //         this.router.navigate(['project-list']);
-  //         this.refresh();
-  //       } else {
-  //         // login failed
-  //         this.error = 'Username or password is incorrect';
-  //         this.loading = false;
-  //       }
-  //     }, error => {
-  //       this.loading = false;
-  //       this.error = error;
-  //     });
-  // }
+  signUp() {
+    console.log("signUp");
+    this.authenticationService.signUpWithFacebook();
+  }
 }

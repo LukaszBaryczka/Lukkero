@@ -31,8 +31,10 @@ public class UserConverter implements IConverter<Customer, CustomerDTO> {
         
         if ( customerDTO.getUserId ( ) != null ) {
             Customer oldCustomer = userService.findOne ( BigInteger.valueOf ( Long.valueOf ( customerDTO.getUserId ( ) ) ) );
-            customer.setProjects ( oldCustomer.getProjects ( ) );
-            customer.setTasks ( oldCustomer.getTasks ( ) );
+            if(oldCustomer != null) {
+                customer.setProjects ( oldCustomer.getProjects ( ) );
+                customer.setTasks ( oldCustomer.getTasks ( ) );
+            }
         }
         return customer;
     }

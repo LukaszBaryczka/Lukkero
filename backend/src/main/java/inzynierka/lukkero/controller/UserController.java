@@ -1,13 +1,19 @@
 package inzynierka.lukkero.controller;
 
+import inzynierka.lukkero.security.SignUpContext;
 import inzynierka.lukkero.util.UserConverter;
 import inzynierka.lukkero.dto.CustomerDTO;
 import inzynierka.lukkero.model.Customer;
 import inzynierka.lukkero.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 @RestController
@@ -18,6 +24,9 @@ public class UserController {
     
     @Autowired
     UserConverter userConverter;
+    
+    @Autowired
+    PasswordEncoder passwordEncoder;
     
     @RequestMapping ( method = RequestMethod.GET, value = "/user" )
     @ResponseBody
@@ -55,5 +64,14 @@ public class UserController {
             return customerDTOList;
         }
         return null;
+    }
+    
+    @RequestMapping(value = "/sign-up", method = RequestMethod.POST, produces="application/json")
+    public ResponseEntity<?> signUp( @RequestBody SignUpContext signUpContext) throws ParseException {
+        Customer user = userConverter.dtoToEntity ( signUpContext.getUserDto () );
+        user.setUsername ( signUpContext.getUsername () );
+        user.setPassword (passwordEncoder.encode(signUpContext.getPassword ()));
+        userService.save(user);
+        return new ResponseEntity<>( HttpStatus.OK);
     }
 }
