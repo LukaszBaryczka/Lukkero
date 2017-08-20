@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpModule, JsonpModule } from '@angular/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
@@ -19,6 +20,7 @@ import { LoginComponent } from './login/login.component'
 import { AuthenticationService } from "./login/authentication.service";
 import { CanActivateAuthGuard } from './can-activate.authguard';
 import { FacebookModule } from 'ngx-facebook';
+import { ModalProjectComponent } from './project/modal-project/modal-project.component';
 
 
 @NgModule({
@@ -34,14 +36,18 @@ import { FacebookModule } from 'ngx-facebook';
     ProjectListComponent,
     LogoComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    ModalProjectComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
     routes,
-    FacebookModule.forRoot()
+    FacebookModule.forRoot(),
+    NgbModule.forRoot(),
+    ReactiveFormsModule,
+    JsonpModule
   ],
   providers: [ AuthenticationService, CanActivateAuthGuard ],
   bootstrap: [AppComponent]
