@@ -5,7 +5,7 @@ import { MembersService } from '../../members/members.service'
 import { ModalProjectService } from './modal-project.service'
 import {User} from "../../../dictionary/User";
 import {Project} from "../../../dictionary/Project";
-import {isUndefined} from "util";
+
 @Component({
   selector: 'modal-project',
   templateUrl: './modal-project.component.html',
