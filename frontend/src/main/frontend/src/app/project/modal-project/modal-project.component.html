@@ -28,10 +28,11 @@
 
       <div class="form-group">
         <label for="members">Zespół</label>
-        <select multiple  id="members" class="form-control" (change)="change($event.target.options)">
-          <option *ngFor="let item of myOptions" [value]="item">{{item.name}} {{item.surname}}</option>
+        <select id="members" multiple name="users" [(ngModel)]="selectedUser">
+          <option *ngFor="let user of users" [value]="user">
+            {{user.name}} {{user.surname}}
+          </option>
         </select>
-        <br><button (click)="changeOptions()">select 1 and 3</button>
       </div>
 
       <div class="modal-footer">

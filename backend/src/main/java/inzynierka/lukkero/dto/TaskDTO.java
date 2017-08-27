@@ -2,11 +2,12 @@ package inzynierka.lukkero.dto;
 
 import org.apache.commons.lang3.StringUtils;
 
+import java.io.Serializable;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class TaskDTO {
+public class TaskDTO implements Serializable {
     
     private static final SimpleDateFormat dateFormat
             = new SimpleDateFormat ( "yyyy-MM-dd HH:mm" );
@@ -28,6 +29,9 @@ public class TaskDTO {
     private CustomerDTO customer;
 
     private ProjectDTO project;
+    
+    public TaskDTO () {
+    }
     
     public String getTaskId () {
         return taskId;
@@ -77,9 +81,9 @@ public class TaskDTO {
     
     public void setEssTime ( Date date ) {
         if ( date != null ) {
-            this.deadline = dateFormat.format ( date );
+            this.essTime = dateFormat.format ( date );
         } else {
-            this.deadline = StringUtils.EMPTY;
+            this.essTime = StringUtils.EMPTY;
         }
     }
     
@@ -92,9 +96,9 @@ public class TaskDTO {
     
     public void setAllTime ( Date date ) {
         if ( date != null ) {
-            this.deadline = dateFormat.format ( date );
+            this.allTime = dateFormat.format ( date );
         } else {
-            this.deadline = StringUtils.EMPTY;
+            this.allTime = StringUtils.EMPTY;
         }
     }
     
@@ -107,9 +111,9 @@ public class TaskDTO {
     
     public void setDayTime ( Date date ) {
         if ( date != null ) {
-            this.deadline = dateFormat.format ( date );
+            this.dayTime = dateFormat.format ( date );
         } else {
-            this.deadline = StringUtils.EMPTY;
+            this.dayTime = StringUtils.EMPTY;
         }
     }
     

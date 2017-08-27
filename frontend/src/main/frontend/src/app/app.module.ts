@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SelectModule } from 'ng2-select';
 
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
@@ -21,6 +22,7 @@ import { AuthenticationService } from "./login/authentication.service";
 import { CanActivateAuthGuard } from './can-activate.authguard';
 import { FacebookModule } from 'ngx-facebook';
 import { ModalProjectComponent } from './project/modal-project/modal-project.component';
+import { ModalTaskComponent } from './task-list/modal-task/modal-task.component';
 
 
 @NgModule({
@@ -37,7 +39,8 @@ import { ModalProjectComponent } from './project/modal-project/modal-project.com
     LogoComponent,
     HomeComponent,
     LoginComponent,
-    ModalProjectComponent
+    ModalProjectComponent,
+    ModalTaskComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +50,8 @@ import { ModalProjectComponent } from './project/modal-project/modal-project.com
     FacebookModule.forRoot(),
     NgbModule.forRoot(),
     ReactiveFormsModule,
-    JsonpModule
+    JsonpModule,
+    SelectModule
   ],
   providers: [ AuthenticationService, CanActivateAuthGuard ],
   bootstrap: [AppComponent]

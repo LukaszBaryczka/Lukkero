@@ -34,6 +34,11 @@ public class UserConverter implements IConverter<Customer, CustomerDTO> {
             if(oldCustomer != null) {
                 customer.setProjects ( oldCustomer.getProjects ( ) );
                 customer.setTasks ( oldCustomer.getTasks ( ) );
+                customer.setAuthorities ( oldCustomer.getAuthorities () );
+                customer.setUsername ( oldCustomer.getUsername () );
+                customer.setPassword ( oldCustomer.getPassword () );
+                customer.setLastPasswordResetDate ( oldCustomer.getLastPasswordResetDate () );
+                customer.setEnabled ( oldCustomer.getEnabled () );
             }
         }
         return customer;

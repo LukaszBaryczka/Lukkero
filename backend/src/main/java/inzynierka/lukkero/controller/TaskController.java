@@ -1,13 +1,19 @@
 package inzynierka.lukkero.controller;
 
+import inzynierka.lukkero.model.context.NewTaskContext;
+import inzynierka.lukkero.util.ProjectConverter;
 import inzynierka.lukkero.util.TaskConverter;
 import inzynierka.lukkero.dto.TaskDTO;
 import inzynierka.lukkero.model.Task;
 import inzynierka.lukkero.service.TaskService;
+import inzynierka.lukkero.util.UserConverter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigInteger;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +25,12 @@ public class TaskController {
     
     @Autowired
     TaskConverter taskConverter;
+    
+    @Autowired
+    UserConverter userConverter;
+    
+    @Autowired
+    ProjectConverter projectConverter;
     
     @RequestMapping ( method = RequestMethod.GET, value = "/task/{taskId}" )
     @ResponseBody
@@ -56,5 +68,16 @@ public class TaskController {
             return taskDTOList;
         }
         return null;
+    }
+    
+    @RequestMapping(value = "/task", method = RequestMethod.POST, produces="application/json")
+    public ResponseEntity<?> postTask( @RequestBody NewTaskContext newTaskContext) throws ParseException {
+        Task task = taskConverter.dtoToEntity ( newTaskContext.getTask () );
+        task.setCustomer ( userConverter.dtoToEntity ( newTaskContext.getCustomer () ) );
+        task.setProject ( projectConverter.dtoToEntity ( newTaskContext.getProject () ) );
+        
+        taskService.save ( task );
+        
+        return new ResponseEntity<>( HttpStatus.OK);
     }
 }

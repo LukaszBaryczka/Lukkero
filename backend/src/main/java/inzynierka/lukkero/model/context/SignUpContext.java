@@ -1,4 +1,4 @@
-package inzynierka.lukkero.security;
+package inzynierka.lukkero.model.context;
 
 import inzynierka.lukkero.dto.CustomerDTO;
 

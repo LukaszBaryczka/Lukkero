@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
-import { MembersService } from '../../members/members.service'
+import { Router } from '@angular/router';
 
-import { ModalProjectService } from './modal-project.service'
+import { MembersService } from '../../members/members.service';
+import { ModalProjectService } from './modal-project.service';
 import {User} from "../../../dictionary/User";
 import {Project} from "../../../dictionary/Project";
 
@@ -13,18 +14,21 @@ import {Project} from "../../../dictionary/Project";
 })
 export class ModalProjectComponent implements OnInit{
   closeResult: string;
-  myOptions: Array<User>;
+  users: Array<User>;
   project : Project;
   selectedUser: Array<User>;
   deadline;
 
   constructor(private modalService: NgbModal,
-              private membersService : MembersService) {}
+              private membersService : MembersService,
+              private router: Router,
+              private modalProjectService: ModalProjectService
+  ) {}
 
   ngOnInit() {
     this.project = new Project();
     this.membersService.getMembers().subscribe(
-      data => this.myOptions = data
+      data => this.users = data
     );
   }
 
@@ -64,8 +68,13 @@ export class ModalProjectComponent implements OnInit{
       }
     }
     console.log("Project deadline " + this.project.deadline)
-
-    //TODO
     console.log(this.selectedUser)
+
+    this.modalProjectService.postProject(this.project, this.selectedUser)
+      .subscribe(result => {
+      if (result === true) {
+        console.log('add new project')
+        window.location.reload();
+      }});;
   }
 }

@@ -1,6 +1,6 @@
 package inzynierka.lukkero.controller;
 
-import inzynierka.lukkero.security.SignUpContext;
+import inzynierka.lukkero.model.context.SignUpContext;
 import inzynierka.lukkero.util.UserConverter;
 import inzynierka.lukkero.dto.CustomerDTO;
 import inzynierka.lukkero.model.Customer;
@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 @RestController

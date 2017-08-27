@@ -1,0 +1,70 @@
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Nowe zadanie</h4>
+    <button type="button" class="close" aria-label="Close" (click)="c('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form (ngSubmit)="onSubmit()" #projectForm="ngForm">
+      <div class="form-group">
+        <label for="name">Tytuł taska</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="task.name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="description">Opis</label>
+        <input type="text" class="form-control" id="description" [(ngModel)]="task.description" name="description" required>
+      </div>
+
+      <div class="form-group">
+        <label for="deadline">Termin</label>
+        <input class="form-control" placeholder="yyyy-mm-dd"
+               name="deadlinedp" ngbDatepicker #d1="ngbDatepicker" id="deadline" [(ngModel)]="deadline" name="deadline" required>
+        <button class="input-group-addon" (click)="d1.toggle()" type="button">
+          <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+        </button>
+      </div>
+
+      <div class="form-group">
+        <label for="esstime">Przewidywany czas realizacji</label>
+        <input class="form-control" placeholder="yyyy-mm-dd"
+               name="esstimedp" ngbDatepicker #d2="ngbDatepicker" id="esstime" [(ngModel)]="esstime" name="esstime" required>
+        <button class="input-group-addon" (click)="d2.toggle()" type="button">
+          <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+        </button>
+      </div>
+
+      <div class="form-group">
+        <label for="members">Wykonanie</label>
+        <select id="members" name="users" [(ngModel)]="customer">
+          <option *ngFor="let user of users" [ngValue]="user">
+            {{user.name}} {{user.surname}}
+          </option>
+        </select>
+      </div>
+
+      <div class="form-group" [hidden]="!visible">
+        <label for="project">Projekt</label>
+        <select id="project" name="projects" [(ngModel)]="project">
+          <option *ngFor="let project of projects" [ngValue]="project">
+            {{project.name}}
+          </option>
+        </select>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+
+    </form>
+  </div>
+
+</ng-template>
+
+<button (click)="open(content)">Dodaj nowe zadanie</button>
+
+<hr>
+
+<pre>{{closeResult}}</pre>
