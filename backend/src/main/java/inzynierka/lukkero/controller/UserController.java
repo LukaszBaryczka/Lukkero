@@ -1,16 +1,19 @@
 package inzynierka.lukkero.controller;
 
 import inzynierka.lukkero.model.context.SignUpContext;
+import inzynierka.lukkero.security.JwtTokenUtil;
 import inzynierka.lukkero.util.UserConverter;
 import inzynierka.lukkero.dto.CustomerDTO;
 import inzynierka.lukkero.model.Customer;
 import inzynierka.lukkero.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -27,11 +30,19 @@ public class UserController {
     @Autowired
     PasswordEncoder passwordEncoder;
     
-    @RequestMapping ( method = RequestMethod.GET, value = "/user" )
+    @Value ("${jwt.header}")
+    private String tokenHeader;
+    
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
+    
+    @RequestMapping ( method = RequestMethod.GET, value = "/user", produces="application/json" )
     @ResponseBody
-    private CustomerDTO getUser () {
+    private CustomerDTO getUser (HttpServletRequest request) {
         if ( userService != null ) {
-            Customer customer = userService.findSessionUser ( );
+            String token = request.getHeader(tokenHeader);
+            String username = jwtTokenUtil.getUsernameFromToken(token);
+            Customer customer = userService.findUserByUsername ( username );
             return userConverter.entityToDto ( customer );
         }
         return null;

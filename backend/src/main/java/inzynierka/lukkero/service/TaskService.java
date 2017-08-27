@@ -13,7 +13,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service ( "taskService" )
-//@Scope("session")
 public class TaskService implements IService< Task > {
     
     @Autowired
@@ -60,11 +59,10 @@ public class TaskService implements IService< Task > {
         return taskRepository.findTasksByProject ( project );
     }
     
-    public List< Task > getTaskBySessionUser () {
-        //TODO Pobieranie userId z sesji usera
+    public List< Task > getTaskByUsername (String username) {
         if ( taskRepository == null ) return new ArrayList<> ( );
         if ( userService == null ) return new ArrayList<> ( );
-        Customer customer = userService.findOne ( BigInteger.ONE );
+        Customer customer = userService.findUserByUsername ( username );
         return ( List< Task > ) taskRepository.findTasksByCustomer ( customer );
 
     }

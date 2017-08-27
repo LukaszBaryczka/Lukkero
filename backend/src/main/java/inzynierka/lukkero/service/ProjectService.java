@@ -1,7 +1,10 @@
 package inzynierka.lukkero.service;
 
+import inzynierka.lukkero.model.Customer;
+import inzynierka.lukkero.model.Documentation;
 import inzynierka.lukkero.model.Project;
 import inzynierka.lukkero.repository.ProjectRepository;
+import inzynierka.lukkero.repository.UserRepository;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,11 +14,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service ( "projectService" )
-//@Scope("session")
 public class ProjectService implements IService< Project > {
     
     @Autowired
     ProjectRepository projectRepository;
+    
+    @Autowired
+    UserRepository userRepository;
     
     @Override
     public String save ( Project project ) {
@@ -41,9 +46,19 @@ public class ProjectService implements IService< Project > {
     public List< Project > getAll () {
         if ( projectRepository == null ) return new ArrayList<> ( );
         List< Project > projects = ( List< Project > ) projectRepository.findAll ( );
-        //TODO Wyszukanie projektów dla jednego usera(zaiplementowanie mechanizmu sesji oraz pobieranie z niego id usera)
-        List< Project > projectForUser = new ArrayList<> ( );
         return projects;
     }
     
+    public List<Project> getAllByUsername (String username) {
+        if ( projectRepository == null ) return new ArrayList<> ( );
+        if ( userRepository == null ) return new ArrayList<> ( );
+        Customer customer = userRepository.findByUsername ( username );
+        List< Project > projects = ( List< Project > )
+                projectRepository.findProjectByCustomers ( customer );
+        return projects;
+    }
+    
+    public Documentation getDocumentationByProjectId(BigInteger projectId) {
+        return findOne ( projectId ).getDocumentation ();
+    }
 }

@@ -1,6 +1,7 @@
 package inzynierka.lukkero.controller;
 
 import inzynierka.lukkero.model.context.NewTaskContext;
+import inzynierka.lukkero.security.JwtTokenUtil;
 import inzynierka.lukkero.util.ProjectConverter;
 import inzynierka.lukkero.util.TaskConverter;
 import inzynierka.lukkero.dto.TaskDTO;
@@ -8,10 +9,12 @@ import inzynierka.lukkero.model.Task;
 import inzynierka.lukkero.service.TaskService;
 import inzynierka.lukkero.util.UserConverter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.math.BigInteger;
 import java.text.ParseException;
 import java.util.ArrayList;
@@ -31,6 +34,12 @@ public class TaskController {
     
     @Autowired
     ProjectConverter projectConverter;
+    
+    @Value ("${jwt.header}")
+    private String tokenHeader;
+    
+    @Autowired
+    private JwtTokenUtil jwtTokenUtil;
     
     @RequestMapping ( method = RequestMethod.GET, value = "/task/{taskId}" )
     @ResponseBody
@@ -58,9 +67,11 @@ public class TaskController {
     
     @RequestMapping ( method = RequestMethod.GET, value = "/task-list" )
     @ResponseBody
-    private List< TaskDTO > getAllTaskForUser () {
+    private List< TaskDTO > getAllTaskForUser (HttpServletRequest request) {
         if ( taskService != null ) {
-            List< Task > tasks = taskService.getTaskBySessionUser ( );
+            String token = request.getHeader(tokenHeader);
+            String username = jwtTokenUtil.getUsernameFromToken(token);
+            List< Task > tasks = taskService.getTaskByUsername ( username );
             List< TaskDTO > taskDTOList = new ArrayList<> (  );
             for ( Task task : tasks ) {
                 taskDTOList.add ( taskConverter.entityToDto ( task ) );

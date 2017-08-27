@@ -15,7 +15,7 @@ export class TaskListService {
 
   private headers = new Headers({
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer ' + this.authenticationService.getToken()
+    'Authorization': this.authenticationService.getToken()
   });
 
   getByProjectId(projectId:number) {

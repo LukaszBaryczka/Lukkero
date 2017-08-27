@@ -1,0 +1,14 @@
+<button [hidden]="visibleEdit" type="button" (click)="edit()">Edytuj</button>
+<p [hidden]="visibleEdit">
+  {{documentation.doc}}
+</p>
+
+<form (ngSubmit)="onSubmit()" #projectForm="ngForm" [hidden]="!visibleEdit">
+  <p>
+    <button type="submit" class="btn btn-success">Submit</button>
+    <button type="button" (click)="edit()">Wyjdź</button>
+  </p>
+  <textarea style="width: 70%" (change)="doTextareaValueChange($event)">
+    {{doc}}
+  </textarea>
+</form>

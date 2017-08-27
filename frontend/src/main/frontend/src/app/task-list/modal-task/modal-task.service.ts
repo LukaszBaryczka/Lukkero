@@ -16,7 +16,7 @@ export class ModalTaskService {
 
   private headers = new Headers({
   'Content-Type': 'application/json',
-  'Authorization': 'Bearer ' + this.authenticationService.getToken()
+  'Authorization': this.authenticationService.getToken()
   });
 
   postTask(task : Task, project: Project, customer: User): Observable<boolean> {

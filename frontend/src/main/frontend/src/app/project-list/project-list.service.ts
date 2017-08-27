@@ -14,7 +14,7 @@ export class ProjectListService {
 
   private headers = new Headers({
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer ' + this.authenticationService.getToken()
+    'Authorization': this.authenticationService.getToken()
   });
 
   getProjectList() {

@@ -23,6 +23,7 @@ import { CanActivateAuthGuard } from './can-activate.authguard';
 import { FacebookModule } from 'ngx-facebook';
 import { ModalProjectComponent } from './project/modal-project/modal-project.component';
 import { ModalTaskComponent } from './task-list/modal-task/modal-task.component';
+import { DocumentationComponent } from './documentation/documentation.component';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ModalTaskComponent } from './task-list/modal-task/modal-task.component'
     HomeComponent,
     LoginComponent,
     ModalProjectComponent,
-    ModalTaskComponent
+    ModalTaskComponent,
+    DocumentationComponent
   ],
   imports: [
     BrowserModule,

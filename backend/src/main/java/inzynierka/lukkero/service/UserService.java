@@ -18,7 +18,6 @@ import java.util.Date;
 import java.util.List;
 
 @Service ( "userService" )
-//@Scope("session")
 public class UserService implements IService< Customer > {
     
     @Autowired
@@ -67,11 +66,9 @@ public class UserService implements IService< Customer > {
         return ( List< Customer > ) userRepository.findAll ( );
     }
     
-    public Customer findSessionUser () {
+    public Customer findUserByUsername (String username) {
         if ( userRepository == null ) return new Customer ( );
-            //TODO Wyszukanie projektów dla jednego usera(zaiplementowanie mechanizmu sesji oraz pobieranie z niego id usera)
-            BigInteger id = BigInteger.ONE;
-            return userRepository.findOne ( id );
+            return userRepository.findByUsername ( username );
     }
     
     public List< Customer > findByProjectId ( String projectId ) {

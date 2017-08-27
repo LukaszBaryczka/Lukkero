@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service ( "notificationService" )
-//@Scope("session")
 public class NotificationService implements IService< Notification > {
     
     @Autowired

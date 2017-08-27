@@ -54,11 +54,7 @@ public class Customer implements Serializable {
     private String email;
     @Column ( name = "work_time" )
     private Date workTime;
-    
-    @ManyToMany ( fetch = FetchType.LAZY, cascade = CascadeType.ALL )
-    @JoinTable ( name = "user_project", joinColumns = {
-            @JoinColumn ( name = "customer_id", nullable = false, updatable = false ) },
-            inverseJoinColumns = { @JoinColumn ( name = "project_id" ) } )
+    @ManyToMany (mappedBy = "customers")
     private List< Project > projects;
     
     @OneToMany ( mappedBy = "customer", cascade = CascadeType.ALL )

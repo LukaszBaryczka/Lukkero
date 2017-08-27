@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Service ( "changesService" )
-//@Scope("session")
 public class ChangesService implements IService< Change > {
     
     @Autowired

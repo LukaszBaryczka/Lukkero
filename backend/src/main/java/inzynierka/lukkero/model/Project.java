@@ -27,10 +27,18 @@ public class Project implements Serializable {
     private int userTasks;
     @Column ( name = "deadline" )
     private Date deadline;
-    @ManyToMany ( fetch = FetchType.LAZY, mappedBy = "projects" )
+    @ManyToMany()
+    @JoinTable (
+            name = "user_project",
+            inverseJoinColumns = { @JoinColumn ( name = "customer_id", referencedColumnName = "customer_id") },
+            joinColumns = { @JoinColumn ( name = "project_id", referencedColumnName = "project_id" ) } )
     private List< Customer > customers;
     @OneToMany ( mappedBy = "project", cascade = CascadeType.ALL )
     private List< Task > tasks;
+    
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "documentation")
+    private Documentation documentation;
     
     public Project () {
     }
@@ -114,6 +122,14 @@ public class Project implements Serializable {
     
     public void setTasks ( List< Task > tasks ) {
         this.tasks = tasks;
+    }
+    
+    public Documentation getDocumentation () {
+        return documentation;
+    }
+    
+    public void setDocumentation ( Documentation documentation ) {
+        this.documentation = documentation;
     }
     
     @Override

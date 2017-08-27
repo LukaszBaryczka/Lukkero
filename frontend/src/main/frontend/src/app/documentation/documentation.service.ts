@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/map';
 import { AppConfig } from '../../../src/config';
-import { Change } from "../../dictionary/Change"
+import {} from '@angular/http';
 import { AuthenticationService } from '../login/authentication.service'
+import {Documentation} from "../../dictionary/Documentation";
 
 
 @Injectable()
-export class ChangesService {
+export class DocumentationService {
 
   constructor(private http: Http, private authenticationService: AuthenticationService) { }
 
@@ -19,11 +20,30 @@ export class ChangesService {
     'Authorization': this.authenticationService.getToken()
   });
 
-  getChanges() {
-    return this.http.get(AppConfig.API_BASE_URL + AppConfig.API_CHANGES_URL, {headers: this.headers})
-      .map(response => <Change[]>response.json())
+
+  getDoc(projectId:number) {
+    return this.http.get(
+      AppConfig.API_BASE_URL
+      + AppConfig.API_DOC_URL
+      + "/" + projectId,
+      {headers: this.headers})
+      .map(response => response.json())
       .catch(this.handleError);
   }
+
+  postDoc(doc : Documentation, projectId:number): Observable<boolean> {
+    return this.http.post(
+      AppConfig.API_BASE_URL
+      + AppConfig.API_DOC_URL
+      + "/" + projectId, JSON.stringify(doc),
+      {
+        headers: this.headers
+      })
+      .map((response: Response) => {
+        return true;
+      }).catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+  }
+
   private handleError (error: Response | any) {
     // In a real world app, you might use a remote logging infrastructure
     let errMsg: string;

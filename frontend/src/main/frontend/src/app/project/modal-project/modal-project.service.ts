@@ -15,7 +15,7 @@ export class ModalProjectService {
 
   private headers = new Headers({
     'Content-Type': 'application/json',
-    'Authorization': 'Bearer ' + this.authenticationService.getToken()
+    'Authorization': this.authenticationService.getToken()
   });
 
   postProject(project : Project, selectedUser: Array<User>): Observable<boolean> {

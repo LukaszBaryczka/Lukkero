@@ -1,6 +1,7 @@
 <modal-project></modal-project>
 <div [routerLink]="['/project-list', projekt.projectId]" id="Projekt" *ngFor="let projekt of projekty">
-  <div [routerLink]="['/project', projekt.projectId]" id="button">X</div>
+  <div [routerLink]="['/project', projekt.projectId]" id="projectBtn">X</div>
+  <div [routerLink]="['/doc', projekt.projectId]" id="docBtn">Doc</div>
   <div id="nazwaProjektu">
     Nazwa projektu: {{projekt.name}}
   </div>

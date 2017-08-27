@@ -11,8 +11,9 @@ import { LogoComponent } from './logo/logo.component';
 import { ChangesComponent } from './changes/changes.component';
 import { UserComponent } from './user/user.component';
 import { HomeComponent } from './home/home.component';
-import {LoginComponent} from "./login/login.component";
+import { LoginComponent } from "./login/login.component";
 import { CanActivateAuthGuard } from './can-activate.authguard';
+import { DocumentationComponent } from './documentation/documentation.component'
 
 export const router: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -26,6 +27,7 @@ export const router: Routes = [
   { path: 'task-list', component: TaskListComponent, canActivate: [CanActivateAuthGuard]},
   { path: 'task/:taskId', component: TaskComponent, canActivate: [CanActivateAuthGuard]},
   { path: 'project/:projectId', component: ProjectComponent, canActivate: [CanActivateAuthGuard]},
+  { path: 'doc/:projectId', component: DocumentationComponent, canActivate: [CanActivateAuthGuard]},
   { path: 'login', component: LoginComponent},
   { path: 'changes', component: ChangesComponent, canActivate: [CanActivateAuthGuard]}
 ];

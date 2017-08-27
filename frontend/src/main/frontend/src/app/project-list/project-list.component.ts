@@ -12,14 +12,7 @@ import { Router } from '@angular/router';
 })
 export class ProjectListComponent implements OnInit {
 
-  ngOnInit() {}
-
-  projekty: Array<Project>;
-  errorMessage: string;
-
-  constructor(
-    private router: Router,
-    private service:ProjectListService) {
+  ngOnInit() {
     this.service.getProjectList().subscribe(
       data => this.projekty = data,
       error => {
@@ -28,4 +21,11 @@ export class ProjectListComponent implements OnInit {
       }
     );
   }
+
+  projekty: Array<Project>;
+  errorMessage: string;
+
+  constructor(
+    private router: Router,
+    private service:ProjectListService) {  }
 }
