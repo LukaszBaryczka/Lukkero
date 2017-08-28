@@ -2,10 +2,8 @@ package inzynierka.lukkero.controller;
 
 import inzynierka.lukkero.dto.CommentDTO;
 import inzynierka.lukkero.dto.ProjectDTO;
-import inzynierka.lukkero.model.Comment;
-import inzynierka.lukkero.model.Documentation;
-import inzynierka.lukkero.model.Project;
-import inzynierka.lukkero.model.Task;
+import inzynierka.lukkero.model.*;
+import inzynierka.lukkero.service.ChangesService;
 import inzynierka.lukkero.service.ProjectService;
 import inzynierka.lukkero.service.TaskService;
 import inzynierka.lukkero.util.CommentConverter;
@@ -29,6 +27,9 @@ public class CommentController {
     
     @Autowired
     CommentConverter commentConverter;
+    
+    @Autowired
+    ChangesService changesService;
     
     @RequestMapping ( method = RequestMethod.GET, value = "/project/comment/{projectId}"  )
     private @ResponseBody
@@ -59,6 +60,10 @@ public class CommentController {
             comments.add ( comment );
             project.setComments ( comments );
             projectService.save ( project );
+            Change change = new Change (  );
+            change.setProject ( project );
+            change.setVisible ( true );
+            changesService.save ( change );
             return new ResponseEntity<>( HttpStatus.OK);
         }
         return new ResponseEntity<>( HttpStatus.NOT_IMPLEMENTED);
@@ -73,6 +78,10 @@ public class CommentController {
             comments.add ( comment );
             task.setComments ( comments );
             taskService.save ( task );
+            Change change = new Change (  );
+            change.setTask ( task );
+            change.setVisible ( true );
+            changesService.save ( change );
             return new ResponseEntity<>( HttpStatus.OK);
         }
         return new ResponseEntity<>( HttpStatus.NOT_IMPLEMENTED);

@@ -32,4 +32,20 @@ export class NotificationsComponent implements OnInit{
       }
     );
   }
+
+  visibleProject(notifi : Notification) : boolean {
+    if (notifi.project == null) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  visibleTask(notifi : Notification) : boolean {
+    if (notifi.task == null) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

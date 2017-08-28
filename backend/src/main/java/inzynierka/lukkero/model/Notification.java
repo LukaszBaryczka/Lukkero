@@ -16,10 +16,10 @@ public class Notification implements Serializable {
     @ManyToOne
     @JoinColumn ( name = "customer" )
     private Customer customer;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn ( name = "project" )
     private Project project;
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn ( name = "task" )
     private Task task;
     @Column ( name = "visible" )

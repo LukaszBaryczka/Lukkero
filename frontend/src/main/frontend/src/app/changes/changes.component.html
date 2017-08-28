@@ -1,11 +1,12 @@
 <div id="Changes" *ngFor="let changes of changeList">
-  <div id="whoChanges">
-    Kto: {{changes.customer.name}}  {{changes.customer.surname}}
+  <div id="whereChanges" [hidden]="visibleProject(changes)">
+    <p>Został dodany komentarz w projekcie:</p>
+    <p>{{changes.project?.name}}</p>
   </div>
-  <div id="whereChanges">
-    Gdzie: {{changes.project.name}}
-  </div>
-  <div id="whatChanges">
-    Co: {{changes.task.name}}
+  <div id="whatChanges" [hidden]="visibleTask(changes)">
+    <p>Został dodany komentarz w zadaniu:</p>
+    <p>{{changes.task?.name}}</p>
+    <p>Wykonuje:</p>
+    <p>{{changes.task?.customer.name}} {{changes.task?.customer.surname}}</p>
   </div>
 </div>

@@ -2,8 +2,10 @@ package inzynierka.lukkero.controller;
 
 import inzynierka.lukkero.dto.CustomerDTO;
 import inzynierka.lukkero.model.Customer;
+import inzynierka.lukkero.model.Notification;
 import inzynierka.lukkero.model.context.NewProjectContext;
 import inzynierka.lukkero.security.JwtTokenUtil;
+import inzynierka.lukkero.service.NotificationService;
 import inzynierka.lukkero.util.ProjectConverter;
 import inzynierka.lukkero.dto.ProjectDTO;
 import inzynierka.lukkero.model.Project;
@@ -23,6 +25,9 @@ import java.util.List;
 
 @RestController
 public class ProjectController {
+    
+    @Autowired
+    NotificationService notificationService;
     
     @Autowired
     ProjectService projectService;
@@ -75,6 +80,16 @@ public class ProjectController {
         project.setCustomers ( customers );
     
         projectService.save ( project );
+        List<Notification> notifications = new ArrayList<> (  );
+    
+        for ( Customer customer : customers) {
+            Notification notification = new Notification ( );
+            notification.setCustomer ( customer );
+            notification.setProject ( projectConverter.dtoToEntity ( newProjectContext.getProject ( ) ) );
+            notification.setVisible ( true );
+            notifications.add ( notification );
+        }
+        notificationService.save ( notifications );
         
         return new ResponseEntity<>( HttpStatus.OK);
     }

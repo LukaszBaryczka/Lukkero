@@ -1,7 +1,9 @@
 package inzynierka.lukkero.controller;
 
+import inzynierka.lukkero.model.Notification;
 import inzynierka.lukkero.model.context.NewTaskContext;
 import inzynierka.lukkero.security.JwtTokenUtil;
+import inzynierka.lukkero.service.NotificationService;
 import inzynierka.lukkero.util.ProjectConverter;
 import inzynierka.lukkero.util.TaskConverter;
 import inzynierka.lukkero.dto.TaskDTO;
@@ -40,6 +42,9 @@ public class TaskController {
     
     @Autowired
     private JwtTokenUtil jwtTokenUtil;
+    
+    @Autowired
+    NotificationService notificationService;
     
     @RequestMapping ( method = RequestMethod.GET, value = "/task/{taskId}" )
     @ResponseBody
@@ -88,6 +93,13 @@ public class TaskController {
         task.setProject ( projectConverter.dtoToEntity ( newTaskContext.getProject () ) );
         
         taskService.save ( task );
+    
+        Notification notification = new Notification (  );
+        notification.setCustomer (userConverter.dtoToEntity(newTaskContext.getCustomer () ));
+        notification.setTask ( taskConverter.dtoToEntity ( newTaskContext.getTask () )  );
+        notification.setVisible ( true );
+        
+        notificationService.save ( notification );
         
         return new ResponseEntity<>( HttpStatus.OK);
     }

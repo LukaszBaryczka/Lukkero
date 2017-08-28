@@ -1,8 +1,13 @@
 <div id="Powiadomienie" *ngFor="let notification of notificationList">
   <div id="fromPowiadomienie">
-    Nadawca: {{notification.customer.name}}
+    Cześć {{notification.customer?.name}}
   </div>
-  <div id="contentPowiadomienie">
-    Tresc: {{notification.project.name}} {{notification.task.name}} {{notification.visible}}
+  <div id="contentPowiadomienie" [hidden]="visibleTask(notification)">
+    <p>Zostałeś przydzielony do wykonania zadania</p>
+    <p>Zadanie: {{notification.task?.name}}</p>
+  </div>
+  <div id="contentPowiadomienie2" [hidden]="visibleProject(notification)">
+    <p>Zostałeś dodany do uczestnictwa w projekcie</p>
+    <p>Projekt: {{notification.project?.name}}</p>
   </div>
 </div>
