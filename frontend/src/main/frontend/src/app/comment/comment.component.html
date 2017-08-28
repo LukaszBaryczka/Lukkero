@@ -1,0 +1,8 @@
+<div id="Comment" *ngFor="let comment of comments">
+  {{comment.content}}
+</div>
+<form (ngSubmit)="onSubmit()" #commentForm="ngForm">
+  <button type="submit" class="btn btn-success">Submit</button>
+  <textarea (change)="doTextareaValueChange($event)">
+  </textarea>
+</form>
