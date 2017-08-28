@@ -1,0 +1,10 @@
+#user {
+  display:inline-block;
+  width: 200px;
+  height: auto;
+  background-color: #cccc99;
+  margin-left: 1%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 0.4%;
+}

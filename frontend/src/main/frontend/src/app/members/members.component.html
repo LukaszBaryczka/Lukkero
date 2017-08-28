@@ -1,1 +1,8 @@
-members works!
+<div id="user" *ngFor="let user of userList">
+  <div id="user-name">
+    {{user.name}} {{user.surname}}
+  </div>
+  <div id="user-email">
+    {{user.email}}
+  </div>
+</div>
