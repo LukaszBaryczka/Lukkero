@@ -44,6 +44,13 @@ export class DocumentationService {
       }).catch((error:any) => Observable.throw(error.json().error || 'Server error'));
   }
 
+  share(projectId:number) {
+    this.authenticationService.shareOnFacebook(
+      AppConfig.API_BASE_FRONT_URL
+      + AppConfig.API_DOC_URL
+      + "/" + projectId)
+  }
+
   private handleError (error: Response | any) {
     // In a real world app, you might use a remote logging infrastructure
     let errMsg: string;

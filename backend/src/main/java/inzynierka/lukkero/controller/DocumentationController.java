@@ -1,21 +1,14 @@
 package inzynierka.lukkero.controller;
 
-import inzynierka.lukkero.dto.ChangeDTO;
-import inzynierka.lukkero.model.Change;
 import inzynierka.lukkero.model.Documentation;
 import inzynierka.lukkero.model.Project;
-import inzynierka.lukkero.service.ChangesService;
-import inzynierka.lukkero.service.DocumentationService;
 import inzynierka.lukkero.service.ProjectService;
-import inzynierka.lukkero.util.ChangesConverter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.math.BigInteger;
-import java.util.ArrayList;
-import java.util.List;
 
 @RestController
 public class DocumentationController {

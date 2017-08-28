@@ -24,6 +24,7 @@ import { FacebookModule } from 'ngx-facebook';
 import { ModalProjectComponent } from './project/modal-project/modal-project.component';
 import { ModalTaskComponent } from './task-list/modal-task/modal-task.component';
 import { DocumentationComponent } from './documentation/documentation.component';
+import { CommentComponent } from './comment/comment.component';
 
 
 @NgModule({
@@ -42,7 +43,8 @@ import { DocumentationComponent } from './documentation/documentation.component'
     LoginComponent,
     ModalProjectComponent,
     ModalTaskComponent,
-    DocumentationComponent
+    DocumentationComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,

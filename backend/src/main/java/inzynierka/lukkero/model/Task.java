@@ -4,6 +4,7 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigInteger;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table ( name = "task" )
@@ -32,6 +33,9 @@ public class Task implements Serializable {
     @ManyToOne
     @JoinColumn ( name = "project" )
     private Project project;
+    
+    @OneToMany(mappedBy = "task", cascade = CascadeType.ALL)
+    private List<Comment> comments;
     
     public Task () {
     }
@@ -116,6 +120,14 @@ public class Task implements Serializable {
     
     public void setProject ( Project project ) {
         this.project = project;
+    }
+    
+    public List< Comment > getComments () {
+        return comments;
+    }
+    
+    public void setComments ( List< Comment > comments ) {
+        this.comments = comments;
     }
     
     @Override

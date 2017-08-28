@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
 import { AppConfig } from '../../../src/config';
-import { FacebookService, LoginResponse, InitParams } from 'ngx-facebook';
+import { FacebookService, LoginResponse, InitParams, UIParams, UIResponse } from 'ngx-facebook';
 import { Router } from '@angular/router';
 import {User} from "../../dictionary/User";
 
@@ -126,5 +126,19 @@ export class AuthenticationService {
   isLoggedIn(): boolean {
     var token: String = this.getToken();
     return token && token.length > 0;
+  }
+
+  shareOnFacebook(url: string) {
+    let params: UIParams = {
+      href: url,
+      method: 'share'
+    };
+
+    console.log("UDOSTĘPNIANIE");
+    console.log(params)
+
+    this.fb.ui(params)
+      .then((res: UIResponse) => console.log(res))
+      .catch((e: any) => console.error(e));
   }
 }

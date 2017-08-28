@@ -37,7 +37,6 @@ export class DocumentationComponent implements OnInit {
         console.log("Sprawdzam " + JSON.stringify(data)),
         console.log("Sprawdzam2 " + this.documentation)},
       error => {
-        this.router.navigate(['login']);
         this.errorMessage = <any>error
       }
     );
@@ -66,6 +65,11 @@ export class DocumentationComponent implements OnInit {
           console.log('updateDoc')
           window.location.reload();
         }});;
+  }
+
+  share() {
+    console.log(this.projectId);
+    this.documentationService.share(this.projectId);
   }
 
 }

@@ -40,6 +40,9 @@ public class Project implements Serializable {
     @JoinColumn(name = "documentation")
     private Documentation documentation;
     
+    @OneToMany(mappedBy = "project", cascade = CascadeType.ALL)
+    private List<Comment> comments;
+    
     public Project () {
     }
     
@@ -130,6 +133,14 @@ public class Project implements Serializable {
     
     public void setDocumentation ( Documentation documentation ) {
         this.documentation = documentation;
+    }
+    
+    public List< Comment > getComments () {
+        return comments;
+    }
+    
+    public void setComments ( List< Comment > comments ) {
+        this.comments = comments;
     }
     
     @Override
