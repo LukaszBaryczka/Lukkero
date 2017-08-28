@@ -2,5 +2,6 @@
   <div id="user-name"> {{user.name}} </div>
   <div id="user-surname"> {{user.surname}} </div>
   <div id="user-email"> {{user.email}} </div>
+  <fb-send [hidden]="!visibility()" href="https://www.localhost:4200"></fb-send>
   <button [hidden]="!visibility()" (click)="logout()">Wyloguj</button>
 </div>
