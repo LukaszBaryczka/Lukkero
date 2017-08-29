@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Task } from '../../dictionary/Task';
 import {TaskListService} from "./task-list.service";
 import { Router } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-task-list',
@@ -19,7 +20,8 @@ export class TaskListComponent implements OnInit {
   constructor(
     private router: Router,
     private service:TaskListService,
-    private route: ActivatedRoute) {}
+    private route: ActivatedRoute,
+    private location: Location) {}
 
   ngOnInit() {
     this.getData();
@@ -56,5 +58,8 @@ export class TaskListComponent implements OnInit {
     );
   }
 
+  goBack(){
+    this.location.back();
+  }
 }
 

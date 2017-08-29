@@ -1,3 +1,4 @@
+<button type="button" (click)="goBack()">Powrót</button>
 <modal-task></modal-task>
 <div [routerLink]="['/task', task.taskId]" id="Task" *ngFor="let task of tasks">
   <div id="nazwaTaska">

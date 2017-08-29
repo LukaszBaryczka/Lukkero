@@ -3,7 +3,7 @@ import {ProjectService} from "./project.service";
 import {Project} from "../../dictionary/Project";
 import {ActivatedRoute} from "@angular/router";
 import { Router } from '@angular/router';
-
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-project',
@@ -20,7 +20,8 @@ export class ProjectComponent implements OnInit {
   constructor(
     private router: Router,
     private service:ProjectService,
-    private route: ActivatedRoute) {
+    private route: ActivatedRoute,
+    private location: Location) {
     this.project = new Project();
   }
 
@@ -45,5 +46,9 @@ export class ProjectComponent implements OnInit {
     let params: any = this.route.snapshot.params;
     this.projectId = params.projectId;
     console.log("ProjectComponent Id project: " + this.projectId);
+  }
+
+  goBack(){
+    this.location.back();
   }
 }

@@ -3,7 +3,7 @@ import { Task } from '../../dictionary/Task'
 import { ActivatedRoute } from '@angular/router'
 import {TaskService} from "./task.service";
 import { Router } from '@angular/router';
-
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-task',
@@ -20,7 +20,8 @@ export class TaskComponent implements OnInit {
   constructor(
     private router: Router,
     private service:TaskService,
-    private route: ActivatedRoute) {
+    private route: ActivatedRoute,
+    private location: Location) {
     this.task = new Task();
   }
 
@@ -45,6 +46,10 @@ export class TaskComponent implements OnInit {
     let params: any = this.route.snapshot.params;
     this.taskId = params.taskId;
     console.log("TaskComponent Id taska: " + this.taskId);
+  }
+
+  goBack(){
+    this.location.back();
   }
 
 }

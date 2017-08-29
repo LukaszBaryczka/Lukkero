@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { DocumentationService } from './documentation.service';
 import { Router, ActivatedRoute } from "@angular/router";
 import {Documentation} from "../../dictionary/Documentation";
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-documentation',
@@ -19,7 +20,8 @@ export class DocumentationComponent implements OnInit {
 
   constructor(private router: Router,
               private documentationService : DocumentationService,
-              private route: ActivatedRoute) {
+              private route: ActivatedRoute,
+              private location: Location) {
     this.visibleEdit = false;
     this.documentation = new Documentation;
   }
@@ -72,4 +74,7 @@ export class DocumentationComponent implements OnInit {
     this.documentationService.share(this.projectId);
   }
 
+  goBack(){
+    this.location.back();
+  }
 }
