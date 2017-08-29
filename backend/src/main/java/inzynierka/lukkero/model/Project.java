@@ -1,14 +1,21 @@
 package inzynierka.lukkero.model;
 
+import org.apache.commons.lang3.StringUtils;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigInteger;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
 @Entity
 @Table ( name = "project" )
 public class Project implements Serializable {
+    
+    private static final SimpleDateFormat dateFormat
+            = new SimpleDateFormat ( "yyyy-MM-dd" );
     
     @Id
     @GeneratedValue ( strategy = GenerationType.AUTO )
@@ -103,12 +110,18 @@ public class Project implements Serializable {
         this.userTasks = userTasks;
     }
     
-    public Date getDeadline () {
-        return deadline;
+    public String getDeadline () {
+        if ( this.deadline != null ) {
+            return dateFormat.format ( this.deadline );
+        } else {
+            return StringUtils.EMPTY;
+        }
     }
     
-    public void setDeadline ( Date deadline ) {
-        this.deadline = deadline;
+    public void setDeadline ( String deadline ) throws ParseException {
+        if(deadline != null && !deadline.isEmpty ()){
+            this.deadline = dateFormat.parse ( deadline );
+        }
     }
     
     public List< Customer > getCustomers () {

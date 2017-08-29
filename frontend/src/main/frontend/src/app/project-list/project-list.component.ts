@@ -14,7 +14,11 @@ export class ProjectListComponent implements OnInit {
 
   ngOnInit() {
     this.service.getProjectList().subscribe(
-      data => this.projekty = data,
+      data => {
+        this.projekty = data;
+        console.log("getProjectList");
+        console.log(this.projekty)
+        },
       error => {
         this.router.navigate(['login']);
         this.errorMessage = <any>error

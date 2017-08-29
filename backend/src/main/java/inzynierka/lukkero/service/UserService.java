@@ -35,16 +35,20 @@ public class UserService implements IService< Customer > {
         if (customer != null &&
                 userRepository.exists ( customer.getUserId ()))
             return StringUtils.EMPTY;
-        customer.setEnabled ( true );
-        customer.setLastPasswordResetDate ( new Date (  ) );
-        List< Authority > authorities = new ArrayList<> (  );
-        authorities.add ( authorityRepository.findByName ( AuthorityName.ROLE_USER ) );
-        customer.setAuthorities ( authorities );
-        customer.setTasks ( new ArrayList<> (  ) );
-        customer.setProjects ( new ArrayList<> (  ) );
-        customer.setWorkTime ( new Date ( 0, 0 , 0, 0, 0, 0  ));
-        userRepository.save ( customer );
-        return "Success";
+        try {
+            customer.setEnabled ( true );
+            customer.setLastPasswordResetDate ( new Date (  ) );
+            List< Authority > authorities = new ArrayList<> (  );
+            authorities.add ( authorityRepository.findByName ( AuthorityName.ROLE_USER ) );
+            customer.setAuthorities ( authorities );
+            customer.setTasks ( new ArrayList<> (  ) );
+            customer.setProjects ( new ArrayList<> (  ) );
+            customer.setWorkTime ( StringUtils.EMPTY );
+            userRepository.save ( customer );
+            return "Success";
+        } catch ( Exception e ) {
+            return StringUtils.EMPTY;
+        }
     }
     
     @Override

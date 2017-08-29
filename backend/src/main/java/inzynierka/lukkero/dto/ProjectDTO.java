@@ -8,9 +8,6 @@ import java.util.Date;
 
 public class ProjectDTO {
     
-    private static final SimpleDateFormat dateFormat
-            = new SimpleDateFormat ( "yyyy-MM-dd HH:mm" );
-    
     private String projectId;
 
     private String name;
@@ -73,18 +70,11 @@ public class ProjectDTO {
         this.userTasks = userTasks;
     }
     
-    public Date getDeadline () throws ParseException {
-        if((this.deadline != null && this.deadline.isEmpty ()) || this.deadline == null){
-            return null;
-        }
-        return dateFormat.parse ( this.deadline );
+    public String getDeadline () {
+        return deadline;
     }
     
-    public void setDeadline ( Date date ) {
-        if ( date != null ) {
-            this.deadline = dateFormat.format ( date );
-        } else {
-            this.deadline = StringUtils.EMPTY;
-        }
+    public void setDeadline ( String deadline ) {
+        this.deadline = deadline;
     }
 }

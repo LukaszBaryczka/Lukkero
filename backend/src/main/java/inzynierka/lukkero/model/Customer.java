@@ -1,18 +1,24 @@
 package inzynierka.lukkero.model;
 
 import inzynierka.lukkero.model.security.Authority;
+import org.apache.commons.lang3.StringUtils;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.math.BigInteger;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
 @Entity
 @Table ( name = "customer" )
 public class Customer implements Serializable {
+    
+    private static final SimpleDateFormat dateFormat
+            = new SimpleDateFormat ( "yyyy-MM-dd" );
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "user_seq")
@@ -102,12 +108,18 @@ public class Customer implements Serializable {
         this.email = email;
     }
     
-    public Date getWorkTime () {
-        return workTime;
+    public void setWorkTime ( String workTime ) throws ParseException {
+        if(workTime != null && !workTime.isEmpty ()){
+            this.workTime = dateFormat.parse ( workTime );
+        }
     }
     
-    public void setWorkTime ( Date workTime ) {
-        this.workTime = workTime;
+    public String getWorkTime () {
+        if ( this.workTime != null ) {
+            return dateFormat.format ( this.workTime );
+        } else {
+            return StringUtils.EMPTY;
+        }
     }
     
     public List< Project > getProjects () {

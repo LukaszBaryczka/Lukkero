@@ -8,9 +8,6 @@ import java.util.Date;
 
 public class CustomerDTO {
     
-    private static final SimpleDateFormat dateFormat
-            = new SimpleDateFormat ( "yyyy-MM-dd HH:mm" );
-    
     private String userId;
     
     private String name;
@@ -53,18 +50,11 @@ public class CustomerDTO {
         this.email = email;
     }
     
-    public Date getWorkTime () throws ParseException {
-        if ( ( this.workTime != null && this.workTime.isEmpty ( ) ) || this.workTime == null ) {
-            return null;
-        }
-        return dateFormat.parse ( this.workTime );
+    public String getWorkTime () {
+        return workTime;
     }
     
-    public void setWorkTime ( Date date ) {
-        if ( date != null ) {
-            this.workTime = dateFormat.format ( date );
-        } else {
-            this.workTime = StringUtils.EMPTY;
-        }
+    public void setWorkTime ( String workTime ) {
+        this.workTime = workTime;
     }
 }

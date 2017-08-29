@@ -1,14 +1,21 @@
 package inzynierka.lukkero.model;
 
+import org.apache.commons.lang3.StringUtils;
+
 import javax.persistence.*;
 import java.io.Serializable;
 import java.math.BigInteger;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
 @Entity
 @Table ( name = "task" )
 public class Task implements Serializable {
+    
+    private static final SimpleDateFormat dateFormat
+            = new SimpleDateFormat ( "yyyy-MM-dd" );
     
     @Id
     @GeneratedValue ( strategy = GenerationType.AUTO )
@@ -74,36 +81,60 @@ public class Task implements Serializable {
         this.description = description;
     }
     
-    public Date getDeadline () {
-        return deadline;
+    public String getDeadline () {
+        if ( this.deadline != null ) {
+            return dateFormat.format ( this.deadline );
+        } else {
+            return StringUtils.EMPTY;
+        }
     }
     
-    public void setDeadline ( Date deadline ) {
-        this.deadline = deadline;
+    public void setDeadline ( String deadline ) throws ParseException {
+        if(deadline != null && !deadline.isEmpty ()){
+            this.deadline = dateFormat.parse ( deadline );
+        }
     }
     
-    public Date getEssTime () {
-        return essTime;
+    public String getEssTime () {
+        if ( this.essTime != null ) {
+            return dateFormat.format ( this.essTime );
+        } else {
+            return StringUtils.EMPTY;
+        }
     }
     
-    public void setEssTime ( Date essTime ) {
-        this.essTime = essTime;
+    public void setEssTime ( String essTime ) throws ParseException {
+        if(essTime != null && !essTime.isEmpty ()){
+            this.essTime = dateFormat.parse ( essTime );
+        }
     }
     
-    public Date getAllTime () {
-        return allTime;
+    public String getAllTime () {
+        if ( this.allTime != null ) {
+            return dateFormat.format ( this.allTime );
+        } else {
+            return StringUtils.EMPTY;
+        }
     }
     
-    public void setAllTime ( Date allTime ) {
-        this.allTime = allTime;
+    public void setAllTime ( String allTime ) throws ParseException {
+        if(allTime != null && !allTime.isEmpty ()){
+            this.allTime = dateFormat.parse ( allTime );
+        }
     }
     
-    public Date getDayTime () {
-        return dayTime;
+    public String getDayTime () {
+        if ( this.dayTime != null ) {
+            return dateFormat.format ( this.dayTime );
+        } else {
+            return StringUtils.EMPTY;
+        }
     }
     
-    public void setDayTime ( Date dayTime ) {
-        this.dayTime = dayTime;
+    public void setDayTime ( String dayTime ) throws ParseException {
+        if(dayTime != null && !dayTime.isEmpty ()){
+            this.dayTime = dateFormat.parse ( dayTime );
+        }
     }
     
     public Customer getCustomer () {
