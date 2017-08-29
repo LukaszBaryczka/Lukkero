@@ -16,7 +16,6 @@ import { UserComponent } from './user/user.component';
 import { ProjectListComponent } from './project-list/project-list.component';
 import { LogoComponent } from './logo/logo.component';
 import { routes } from './app.router';
-import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component'
 import { AuthenticationService } from "./login/authentication.service";
 import { CanActivateAuthGuard } from './can-activate.authguard';
@@ -39,7 +38,6 @@ import { CommentComponent } from './comment/comment.component';
     UserComponent,
     ProjectListComponent,
     LogoComponent,
-    HomeComponent,
     LoginComponent,
     ModalProjectComponent,
     ModalTaskComponent,
