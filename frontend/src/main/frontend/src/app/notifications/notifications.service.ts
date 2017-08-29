@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/map';
 import { AppConfig } from '../../../src/config';
 import { AuthenticationService } from '../login/authentication.service'
+import { Notification } from '../../dictionary/Notification'
 
 @Injectable()
 export class NotificationsService {
@@ -23,6 +24,18 @@ export class NotificationsService {
       .map(response => response.json())
       .catch(this.handleError);
   }
+
+  postNotifications(notification: Notification): Observable<boolean> {
+    return this.http.post(AppConfig.API_BASE_URL
+      + AppConfig.API_NOTIFICATIONS_URL, JSON.stringify(notification),
+      {
+        headers: this.headers
+      })
+      .map((response: Response) => {
+        return true;
+      }).catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+  }
+
   private handleError (error: Response | any) {
     // In a real world app, you might use a remote logging infrastructure
     let errMsg: string;

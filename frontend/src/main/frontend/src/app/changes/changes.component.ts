@@ -53,4 +53,14 @@ export class ChangesComponent implements OnInit{
       return false;
     }
   }
+
+  hide(change: Change) {
+    change.visible = false;
+    console.log('post change')
+    this.service.postChange(change).subscribe(result => {
+      if (result === true) {
+        console.log('post change')
+        window.location.reload();
+      }});;
+  }
 }

@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
@@ -36,4 +36,14 @@ export class ChangesService {
     return Observable.throw(errMsg);
   }
 
+  postChange(change: Change): Observable<boolean> {
+    return this.http.post(AppConfig.API_BASE_URL
+      + AppConfig.API_CHANGES_URL, JSON.stringify(change),
+      {
+        headers: this.headers
+      })
+      .map((response: Response) => {
+        return true;
+      }).catch((error:any) => Observable.throw(error.json().error || 'Server error'));
+  }
 }

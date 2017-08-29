@@ -7,12 +7,13 @@ import inzynierka.lukkero.model.Notification;
 import inzynierka.lukkero.service.NotificationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
+import java.math.BigInteger;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -46,5 +47,15 @@ public class NotificationController {
             return notificationDTOList;
         }
         return new ArrayList<> ( );
+    }
+    
+    @RequestMapping(method = RequestMethod.POST, produces="application/json")
+    public ResponseEntity<?> postNotification( @RequestBody NotificationDTO notificationDTO) throws ParseException {
+        if ( notificationService != null ) {
+            Notification notification = notificationConventer.dtoToEntity ( notificationDTO );
+            notificationService.save ( notification );
+            return new ResponseEntity<>( HttpStatus.OK);
+        }
+        return new ResponseEntity<>( HttpStatus.NOT_IMPLEMENTED);
     }
 }

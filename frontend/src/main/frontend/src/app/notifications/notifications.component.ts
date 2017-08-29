@@ -48,4 +48,14 @@ export class NotificationsComponent implements OnInit{
       return false;
     }
   }
+
+  hide(notification: Notification) {
+    notification.visible = false;
+    console.log('post notification')
+    this.service.postNotifications(notification).subscribe(result => {
+      if (result === true) {
+        console.log('post notification')
+        window.location.reload();
+      }});;
+  }
 }

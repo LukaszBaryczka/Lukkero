@@ -1,4 +1,5 @@
 <div id="Powiadomienie" *ngFor="let notification of notificationList">
+  <button type="button" id="notificationBtn" (click)="hide(notification)">X</button>
   <div id="fromPowiadomienie">
     Cześć {{notification.customer?.name}}
   </div>

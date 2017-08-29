@@ -1,4 +1,5 @@
 <div id="Changes" *ngFor="let changes of changeList">
+  <button type="button" id="changesBtn" (click)="hide(changes)">X</button>
   <div id="whereChanges" [hidden]="visibleProject(changes)">
     <p>Został dodany komentarz w projekcie:</p>
     <p>{{changes.project?.name}}</p>
