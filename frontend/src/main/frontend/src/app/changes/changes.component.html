@@ -1,11 +1,11 @@
-<div id="Changes" *ngFor="let changes of changeList">
-  <button type="button" id="changesBtn" (click)="hide(changes)">X</button>
-  <div id="whereChanges" [hidden]="visibleProject(changes)">
-    <p>Został dodany komentarz w projekcie:</p>
+<div class="Changes" *ngFor="let changes of changeList">
+  <button class="button hide" type="button" id="changesBtn" (click)="hide(changes)">*</button>
+  <div class="change" [hidden]="visibleProject(changes)">
+    <p>Został dodany komentarz<br />w projekcie:</p>
     <p>{{changes.project?.name}}</p>
   </div>
-  <div id="whatChanges" [hidden]="visibleTask(changes)">
-    <p>Został dodany komentarz w zadaniu:</p>
+  <div class="change" [hidden]="visibleTask(changes)">
+    <p>Został dodany komentarz<br />w zadaniu:</p>
     <p>{{changes.task?.name}}</p>
     <p>Wykonuje:</p>
     <p>{{changes.task?.customer.name}} {{changes.task?.customer.surname}}</p>

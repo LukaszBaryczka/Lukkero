@@ -1,22 +1,40 @@
-#Task {
+.task-list {
+  width: 98%;
+  height: 98%;
+  margin-top: 2%;
+  margin-left: 2%;
+}
+
+.Task {
+  border-radius: 50px 50px;
   display:inline-block;
-  width: 200px;
-  height: 350px;
-  background-color: #cccc99;
-  margin-left: 1%;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  padding: 0.4%;
+  width: 230px;
+  height: 400px;
+  background-color: #dfe3ee;
+  margin-top: 2%;
+  margin-right: 0.5%;
+  padding: 0.75%;
+  float: left;
 }
 
-#nazwaProjektu {
-
+.Task:hover {
+  background-color: #8b9dc3;
 }
 
-#czasProjektu {
-
+.nazwaTaska {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 4%;
+  margin-bottom: 0.5%;
+  height: 27%;
 }
 
-#opisProjektu {
-  height: 50%;
+.czasTaska {
+  text-align: center;
+  clear: both;
+}
+
+.opisTaska {
+  text-align: center;
+  height: 58%;
 }

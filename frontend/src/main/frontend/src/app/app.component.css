@@ -1,80 +1,87 @@
 div {
-  position:relative;
 }
 a {
   text-decoration: none;
 }
 
-#header {
-  height:181px;
-  margin-bottom:0px;
-  background-color:#0086B3 ;
-  position: relative;
+.header, .footer {
+  background-color: #3b5998;
 }
 
-#menu a {
+.content, .menu, .notifications {
+  height: 75%;
+}
+
+.header {
+  height:20%;
+  border-radius: 150px 150px;
+}
+
+.menu a {
   display: block;
   line-height: 20px;
   padding: 0 8px;
-  color: #fff;
+  color: black;
   font-weight: bold;
+  text-align: center;
 }
-#menu a:hover {
-  background: #fff;
-  color: #294b9d;
+.menu a:hover {
+  background: #8b9dc3;
+  color: white;
 }
 
-#menu {
+.menu {
   width: 15%;
-  height: 100%;
   min-width: 200px;
   float:left;
-  background-color:#663366 ;
+  background-color:#e9ebee ;
   z-index: 1;
+  border-right: solid #3b5998;
 }
 
-#notifications {
+.notifications {
   width: 15%;
   min-width: 250px;
   float:right;
-  background-color:#aaffaa ;
+  border-left: solid #3b5998;
 }
 
-#menu dt {
-  font-size: 12px;
-  color: #000;
-  font-weight: bold;
-  height:20px;
+.menu dt {
+  font-size: 1.4em;
   padding-top:6px;
   text-align:center;
 }
 
-#menu dd {
-  font-size:13px;
+.menu dd {
+  font-size:1.2em;
   margin-top:3px;
   margin-left:6px;
 }
-#menu a {
-  font-size:14px;
-  color: #000000;
 
+.content {
+  width: 70%;
+  float: left;
 }
 
-#content {
-  height:auto;
-  width:auto;
-  position: relative;
-}
-
-#footer {
+.footer {
   clear:both;
-  height:50px;
-  background-color:#0086B3 ;
+  height:5%;
+  border-radius: 100px 100px;
 }
 
-#user-panel {
+.author {
+  color: white;
+  padding-left: 40%;
+  padding-top: 0.5%;
+}
+
+.user-panel {
   float: right;
-  height: 100%;
-  width: 15%;
+  height: 96%;
+  width: 18%;
   min-width: 250px;
+  background-color: #e9ebee;
+  border-radius: 100px 100px;
+  margin-right: 10%;
+  margin-top: 0.2%;
 }

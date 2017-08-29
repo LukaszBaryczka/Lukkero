@@ -1,4 +1,8 @@
-img {
-  height: 100%;
-  width: auto;
+.logo {
+  position: relative;
+  float: left;
+  font-size: 4em;
+  padding-left: 5%;
+  padding-top: 2%;
+  color: white;
 }

@@ -2,4 +2,18 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  width: 100%;
+  background-color: #e9ebee;
+}
+
+.button {
+  background: linear-gradient(#0084ff, #006fff);
+  text-shadow: 0 -1px 0 #005ecf;
+  color: white;
+  border: hidden;
+  border-radius: 30px 30px;
+}
+
+.button:hover {
+  background: linear-gradient(#006fff, #3b5998);
 }

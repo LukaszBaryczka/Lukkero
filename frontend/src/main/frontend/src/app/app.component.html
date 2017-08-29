@@ -1,15 +1,15 @@
-<div id="header">
+<div class="header">
   <app-logo></app-logo>
 
-  <div id="user-panel">
+  <div class="user-panel">
     <app-user></app-user>
   </div>
 </div>
 
-<div id="menu">
-  <dl id="main_menu">
+<div class="menu">
+  <dl class="main_menu">
     <dt>
-      <span id="title_menu">MENU</span>
+      <span class="title_menu">MENU</span>
     </dt>
     <dd>
       <a routerLink="project-list">Lista Projektów</a>
@@ -21,20 +21,20 @@
       <a routerLink="members">Twoi współpracownicy</a>
     </dd>
   </dl>
-  <div id="info">
+  <div class="info">
     <app-changes></app-changes>
   </div>
 </div>
 
-<div id="notifications">
+<div class="notifications">
   <app-notifications></app-notifications>
 </div>
 
-<div id="content" class="container">
+<div class="content">
   <router-outlet></router-outlet>
 </div>
 
-<div id="footer">
-  <div id="author"> Projekt oraz implementacja: Łukasz Baryczka </div>
+<div class="footer">
+  <div class="author"> Projekt oraz implementacja: Łukasz Baryczka </div>
 </div>
 

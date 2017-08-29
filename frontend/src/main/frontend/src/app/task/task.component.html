@@ -1,11 +1,31 @@
-<button type="button" (click)="goBack()">Powrót</button>
-<div id="Task">
-  <div id="task-name">{{task.name}}</div>
-  <div id="task-description">
-    <div id="task-desc">{{task.description}}</div>
-    <div id="task-ess-time">{{task.essTime}}</div>
+<div class="task">
+  <div>
+    <button class="button" type="button" (click)="goBack()">Powrót</button>
   </div>
-  <div id="task-comment">
+  <div class="task-info">
+    <div class="task-name">{{task.name}}</div>
+    <div class="task-customer">
+      <p>
+        Wykonawca:
+      </p>
+      {{task.customer?.name}} {{task.customer?.surname}}
+      <br />
+      {{task.customer?.email}}
+    </div>
+    <div class="task-description">
+      <p>Opis:</p>
+      {{task.description}}
+    </div>
+    <div class="task-essTime">
+      <p>Przewidywany czas realizacji:</p>
+      {{task.essTime}}
+    </div>
+    <div class="task-deadline">
+      <p>Termin końcowy:</p>
+      {{task.deadline}}
+    </div>
+  </div>
+  <div class="comment">
     <app-comment></app-comment>
   </div>
 </div>

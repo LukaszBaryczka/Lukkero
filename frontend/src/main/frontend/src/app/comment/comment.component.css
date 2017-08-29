@@ -1,0 +1,13 @@
+.comments {
+  height: 100%;
+}
+
+.comment {
+  margin:3%;
+  border-bottom: solid #dfe3ee;
+}
+
+.text {
+  margin-left: 3%;
+  width: 80%;
+}

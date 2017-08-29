@@ -1,8 +1,12 @@
-<div id="Comment" *ngFor="let comment of comments">
-  {{comment.content}}
+<div class="comments" >
+  <div *ngFor="let comment of comments">
+    <div class="comment">
+      {{comment.content}}
+    </div>
+  </div>
+  <form (ngSubmit)="onSubmit()" #commentForm="ngForm">
+    <textarea class="text" (change)="doTextareaValueChange($event)">
+    </textarea>
+    <button type="submit" class="button">Dodaj</button>
+  </form>
 </div>
-<form (ngSubmit)="onSubmit()" #commentForm="ngForm">
-  <button type="submit" class="btn btn-success">Submit</button>
-  <textarea (change)="doTextareaValueChange($event)">
-  </textarea>
-</form>

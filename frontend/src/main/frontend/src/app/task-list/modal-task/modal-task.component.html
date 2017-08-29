@@ -54,8 +54,8 @@
       </div>
 
       <div class="modal-footer">
-        <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
-        <button type="submit" class="btn btn-success">Submit</button>
+        <button type="button" class="button" (click)="c('Close click')">Wyjdź</button>
+        <button type="submit" class="button">Dodaj</button>
       </div>
 
     </form>
@@ -63,8 +63,4 @@
 
 </ng-template>
 
-<button (click)="open(content)">Dodaj nowe zadanie</button>
-
-<hr>
-
-<pre>{{closeResult}}</pre>
+<button class="button" (click)="open(content)">Dodaj nowe zadanie</button>

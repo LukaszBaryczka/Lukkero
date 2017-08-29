@@ -1,13 +1,17 @@
-<button type="button" (click)="goBack()">Powrót</button>
-<modal-task></modal-task>
-<div [routerLink]="['/task', task.taskId]" id="Task" *ngFor="let task of tasks">
-  <div id="nazwaTaska">
-    Nazwa zadania: {{task.name}}
+<div class="task-list">
+  <div>
+    <button class="button" type="button" (click)="goBack()">Powrót</button>
+    <modal-task></modal-task>
   </div>
-  <div id="opisTaska">
-    Opis: {{task.description}}
-  </div>
-  <div id="czasTaska">
-    Czas realizacji: {{task.essTime}}
+  <div [routerLink]="['/task', task.taskId]" class="Task" *ngFor="let task of tasks">
+    <div class="nazwaTaska">
+      <p>{{task.name}}</p>
+    </div>
+    <div class="opisTaska">
+      <p>{{task.description}}</p>
+    </div>
+    <div class="czasTaska">
+      <p>Czas realizacji: {{task.essTime}}</p>
+    </div>
   </div>
 </div>

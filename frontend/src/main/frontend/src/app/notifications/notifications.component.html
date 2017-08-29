@@ -1,14 +1,11 @@
-<div id="Powiadomienie" *ngFor="let notification of notificationList">
-  <button type="button" id="notificationBtn" (click)="hide(notification)">X</button>
-  <div id="fromPowiadomienie">
-    Cześć {{notification.customer?.name}}
-  </div>
-  <div id="contentPowiadomienie" [hidden]="visibleTask(notification)">
-    <p>Zostałeś przydzielony do wykonania zadania</p>
+<div class="Notifications" *ngFor="let notification of notificationList">
+  <button class="button hide" type="button" id="notificationBtn" (click)="hide(notification)">*</button>
+  <div class="Notification" [hidden]="visibleTask(notification)">
+    <p>Zostałeś przydzielony<br /> do wykonania zadania</p>
     <p>Zadanie: {{notification.task?.name}}</p>
   </div>
-  <div id="contentPowiadomienie2" [hidden]="visibleProject(notification)">
-    <p>Zostałeś dodany do uczestnictwa w projekcie</p>
+  <div class="Notification" [hidden]="visibleProject(notification)">
+    <p>Zostałeś dodany<br /> do uczestnictwa w projekcie</p>
     <p>Projekt: {{notification.project?.name}}</p>
   </div>
 </div>

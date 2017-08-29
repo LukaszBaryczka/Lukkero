@@ -1,2 +1,16 @@
-<button type="button" (click)="goBack()">Powrót</button>
-<app-comment></app-comment>
+<div class="project">
+  <div>
+    <button class="button" type="button" (click)="goBack()">Powrót</button>
+  </div>
+  <div class="project-info">
+    <div class="project-name">{{project.name}}</div>
+    <div class="project-description">
+      <p>Opis:</p>
+      {{project.description}}
+    </div>
+    <div class="project-deadline">{{project.deadline}}</div>
+  </div>
+  <div class="comment">
+    <app-comment></app-comment>
+  </div>
+</div>
