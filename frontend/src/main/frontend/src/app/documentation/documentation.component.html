@@ -1,14 +1,14 @@
-<button type="button" (click)="goBack()">Powrót</button>
-<button [hidden]="visibleEdit" type="button" (click)="edit()">Edytuj</button>
-<button [hidden]="visibleEdit" type="button" (click)="share()">Udostępnij</button>
+<button class="button" type="button" (click)="goBack()">Powrót</button>
+<button class="button" [hidden]="visibleEdit" type="button" (click)="edit()">Edytuj</button>
+<button class="button" [hidden]="visibleEdit" type="button" (click)="share()">Udostępnij</button>
 <p [hidden]="visibleEdit">
   {{documentation.doc}}
 </p>
 
 <form (ngSubmit)="onSubmit()" #projectForm="ngForm" [hidden]="!visibleEdit">
   <p>
-    <button type="submit" class="btn btn-success">Submit</button>
-    <button type="button" (click)="edit()">Wyjdź</button>
+    <button class="button" type="submit" >Zapisz</button>
+    <button class="button" type="button" (click)="edit()">Wyjdź</button>
   </p>
   <textarea style="width: 70%" (change)="doTextareaValueChange($event)">
     {{doc}}
